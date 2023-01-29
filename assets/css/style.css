@@ -1,0 +1,19 @@
+nav {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navigation-links {
+    font-family: 'Cardo', serif;
+}
+
+nav .navbar-nav a{
+  color: #90ADBB !important;
+}
+
+nav .navbar-nav a:hover{
+  color: black !important;
+}
+
+.nav-link.active {
+    color:black !important;
+}
