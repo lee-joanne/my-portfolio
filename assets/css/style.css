@@ -1,3 +1,11 @@
+h1, h2 {
+  font-family: 'Cardo', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 nav {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -16,4 +24,39 @@ nav .navbar-nav a:hover{
 
 .nav-link.active {
     color:black !important;
+}
+
+.homepage-section {
+  height: 92vh;
+}
+
+.homepage-centering-div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+#myface {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
