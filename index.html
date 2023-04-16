@@ -26,11 +26,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/images/favicon-16x16.png"
-    />
+    <link rel="icon" href="assets/images/favicon-16x16.png" />
 
     <title>Joanne Lee - Portfolio</title>
   </head>
@@ -87,10 +83,14 @@
     <section class="page-sectioning">
       <h2 class="text-center pb-4">- About me -</h2>
       <div class="aboutme-btnheader">
-        <button class="aboutme-btn" type="button"><h3>Biography</h3></button>
-        <button class="aboutme-btn" type="button"><h3>My Hobbies</h3></button>
-        <button class="aboutme-btn" type="button">
-          <h3>Fun Facts????</h3>
+        <button id="biography-btn" class="aboutme-btn" type="button">
+          <h3><i class="fa-solid fa-child-reaching"></i> Biography</h3>
+        </button>
+        <button id="myhobbies-btn" class="aboutme-btn" type="button">
+          <h3><i class="fa-solid fa-pencil"></i> My Hobbies</h3>
+        </button>
+        <button id="funfacts-btn" class="aboutme-btn" type="button">
+          <h3><i class="fa-solid fa-rocket"></i> Fun Facts????</h3>
         </button>
       </div>
       <div class="mt-5">
@@ -128,7 +128,7 @@
             src="assets/images/funfacts-img.png"
             alt="My face, again!"
           />
-          <p>None yet... come back later</p>
+          <p>None</p>
         </div>
       </div>
     </section>
@@ -147,5 +147,7 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
