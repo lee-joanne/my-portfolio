@@ -2,7 +2,7 @@ h1, h2 {
   font-family: 'Cardo', serif;
 }
 
-p {
+h3, p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +26,7 @@ nav .navbar-nav a:hover{
     color:black !important;
 }
 
-.homepage-section {
+.page-sectioning {
   height: 92vh;
 }
 
@@ -59,4 +59,36 @@ nav .navbar-nav a:hover{
     to {
         transform: scale(1);
     }
+}
+
+.aboutme-btnheader {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutme-btn {
+  border: none;
+  background-color: white;
+  color: #90ADBB;
+}
+
+.aboutme-btn:hover {
+  color: rgb(144, 173, 187, 0.3)
+}
+
+.aboutme-img {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#biography-container, #myhobbies-container, #funfacts-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.hide {
+  display: none !important;
 }
