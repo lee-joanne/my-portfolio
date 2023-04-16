@@ -26,9 +26,15 @@ nav .navbar-nav a:hover{
     color:black !important;
 }
 
-.page-sectioning {
+.heroimage-sectioning {
   height: 92vh;
   position: relative;
+}
+
+.page-sectioning {
+  height: 100vh;
+  position: relative;
+  padding-top: 55px;
 }
 
 .homepage-centering-div {
