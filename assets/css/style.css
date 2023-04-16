@@ -69,21 +69,30 @@ nav .navbar-nav a:hover{
 .aboutme-btn {
   border: none;
   background-color: white;
-  color: #90ADBB;
 }
 
 .aboutme-btn:hover {
   color: rgb(144, 173, 187, 0.3)
 }
 
+.aboutme-activelink {
+  color: rgb(144, 173, 187, 0.3)
+}
+
+.aboutme-nonactivelink {
+  color: #90ADBB;
+}
+
+
 .aboutme-img {
-  width: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-#biography-container, #myhobbies-container, #funfacts-container {
-  width: 70%;
+#biography-container, #myhobbies-container {
+  width: 65%;
   display: flex;
   align-items: center;
   margin: auto;

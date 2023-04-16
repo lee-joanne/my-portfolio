@@ -1,29 +1,22 @@
-document.getElementById("biography-btn").addEventListener("click", displayBiography);
-document.getElementById("myhobbies-btn").addEventListener("click", displayMyHobbies);
-document.getElementById("funfacts-btn").addEventListener("click", displayFunFacts);
-let biography = document.getElementById("biography-container")
-let myHobbies = document.getElementById("myhobbies-container")
-let funFacts = document.getElementById("funfacts-container")
-
-
+let bioBtn = document.getElementById("biography-btn");
+let hobbyBtn = document.getElementById("myhobbies-btn")
+let biography = document.getElementById("biography-container");
+let myHobbies = document.getElementById("myhobbies-container");
+bioBtn.addEventListener("click", displayBiography);
+hobbyBtn.addEventListener("click", displayMyHobbies);
 
 function displayBiography() {
-    console.log("clicked bio!")
     biography.classList.remove("hide");
     myHobbies.classList.add("hide");
-    funFacts.classList.add("hide");
+    bioBtn.classList.add("aboutme-activelink");
+    bioBtn.classList.remove("aboutme-nonactivelink");
+    hobbyBtn.classList.add("aboutme-nonactivelink")
 }
 
 function displayMyHobbies() {
-    console.log("clicked hobbies!")
     biography.classList.add("hide");
     myHobbies.classList.remove("hide");
-    funFacts.classList.add("hide");
-}
-
-function displayFunFacts() {
-    console.log("clicked fun!")
-    biography.classList.add("hide");
-    myHobbies.classList.add("hide");
-    funFacts.classList.remove("hide");
+    hobbyBtn.classList.add("aboutme-activelink");
+    hobbyBtn.classList.remove("aboutme-nonactivelink");
+    bioBtn.classList.add("aboutme-nonactivelink")
 }

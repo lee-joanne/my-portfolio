@@ -83,18 +83,23 @@
     <section class="page-sectioning">
       <h2 class="text-center pb-4">- About me -</h2>
       <div class="aboutme-btnheader">
-        <button id="biography-btn" class="aboutme-btn" type="button">
-          <h3><i class="fa-solid fa-child-reaching"></i> Biography</h3>
+        <button
+          id="biography-btn"
+          class="aboutme-btn aboutme-activelink"
+          type="button"
+        >
+          <h3>Biography</h3>
         </button>
-        <button id="myhobbies-btn" class="aboutme-btn" type="button">
-          <h3><i class="fa-solid fa-pencil"></i> My Hobbies</h3>
-        </button>
-        <button id="funfacts-btn" class="aboutme-btn" type="button">
-          <h3><i class="fa-solid fa-rocket"></i> Fun Facts????</h3>
+        <button
+          id="myhobbies-btn"
+          class="aboutme-btn aboutme-nonactivelink"
+          type="button"
+        >
+          <h3>My Hobbies</h3>
         </button>
       </div>
       <div class="mt-5">
-        <div id="biography-container" class="hide">
+        <div id="biography-container">
           <img
             class="aboutme-img mx-4"
             src="assets/images/aboutme-img.png"
@@ -110,25 +115,17 @@
           </p>
         </div>
         <div id="myhobbies-container" class="hide">
+          <img
+            class="aboutme-img mx-4"
+            src="assets/images/myhobbies-img.png"
+            alt="A fox I drew!"
+          />
           <p>
             I like to paint, draw, journal, listen to very reverby sad music,
             and taking photographs. I force myself out of the house to make
             myself enjoy exercising and going to the gym but it has always been
             an internal battle.
           </p>
-          <img
-            class="aboutme-img mx-4"
-            src="assets/images/myhobbies-img.png"
-            alt="A fox I drew!"
-          />
-        </div>
-        <div id="funfacts-container" class="hide">
-          <img
-            class="aboutme-img mx-4"
-            src="assets/images/funfacts-img.png"
-            alt="My face, again!"
-          />
-          <p>None</p>
         </div>
       </div>
     </section>
