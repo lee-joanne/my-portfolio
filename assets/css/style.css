@@ -28,6 +28,7 @@ nav .navbar-nav a:hover{
 
 .page-sectioning {
   height: 92vh;
+  position: relative;
 }
 
 .homepage-centering-div {
@@ -38,7 +39,6 @@ nav .navbar-nav a:hover{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-
 }
 
 #myface {
@@ -59,6 +59,13 @@ nav .navbar-nav a:hover{
     to {
         transform: scale(1);
     }
+}
+
+.aboutme-centering-div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .aboutme-btnheader {
@@ -82,7 +89,6 @@ nav .navbar-nav a:hover{
 .aboutme-nonactivelink {
   color: #90ADBB;
 }
-
 
 .aboutme-img {
   width: 300px;
