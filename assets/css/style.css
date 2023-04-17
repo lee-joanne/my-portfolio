@@ -32,7 +32,7 @@ nav .navbar-nav a:hover{
 }
 
 .page-sectioning {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   padding-top: 55px;
 }
@@ -45,6 +45,11 @@ nav .navbar-nav a:hover{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.aboutme-section {
+  background-image: url("../images/plant1.png");
+  background-repeat: no-repeat;
 }
 
 #myface {
@@ -65,18 +70,6 @@ nav .navbar-nav a:hover{
     to {
         transform: scale(1);
     }
-}
-
-.aboutme-centering-div {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.aboutme-btnheader {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .aboutme-btn {
