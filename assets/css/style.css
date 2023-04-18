@@ -2,7 +2,7 @@ h1, h2 {
   font-family: 'Cardo', serif;
 }
 
-h3, p {
+h3, h5, p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -105,4 +105,22 @@ nav .navbar-nav a:hover{
 
 .hide {
   display: none !important;
+}
+
+.project-centering-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background-color: #90ADBB;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+  background-color: rgb(144, 173, 187, 0.3);
+  color: white;
 }
