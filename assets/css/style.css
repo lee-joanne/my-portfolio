@@ -138,9 +138,9 @@ nav .navbar-nav a:hover{
 }
 
 .social-media-container {
-  background-image: url("../images/leaf1.webp");
+  background-image: url("../images/plant2.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: right bottom;
   background-size: contain;
 }
 
@@ -157,8 +157,8 @@ ul {
 }
 
 .social-media i {
-    font-size: 325%;
-    padding: 3% 8%;
+    font-size: 400%;
+    padding: 3% 7%;
     margin: 1%;
     color: #90ADBB;
 }
@@ -166,6 +166,7 @@ ul {
 .social-media i:hover {
     color: rgb(144, 173, 187, 0.3);
 }
+
 
 .contactme-container {
     background: url(../images/contactme-img.jpeg) no-repeat fixed center/cover;
