@@ -138,6 +138,8 @@ nav .navbar-nav a:hover{
 }
 
 .social-media-container {
+  position: relative;
+  padding-top: 35px;
   background-image: url("../images/plant2.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -158,7 +160,7 @@ ul {
 
 .social-media i {
     font-size: 400%;
-    padding: 3% 7%;
+    padding: 1% 7%;
     margin: 1%;
     color: #90ADBB;
 }
