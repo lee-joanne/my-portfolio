@@ -126,6 +126,14 @@ nav .navbar-nav a:hover{
   color: white;
 }
 
+.social-media-container {
+  background-image: url("../images/forest-img.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+}
+
 ul {
   padding-left: 0;
 }
