@@ -32,7 +32,6 @@ nav .navbar-nav a:hover{
 }
 
 .page-sectioning {
-  height: 700px;
   position: relative;
   padding-top: 55px;
 }
@@ -50,6 +49,7 @@ nav .navbar-nav a:hover{
 .aboutme-section {
   background-image: url("../images/plant1.png");
   background-repeat: no-repeat;
+  min-height: 775px;
 }
 
 #myface {
@@ -110,7 +110,8 @@ nav .navbar-nav a:hover{
 .project-centering-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 20px 10px;
 }
 
 .btn {
@@ -123,4 +124,27 @@ nav .navbar-nav a:hover{
 .btn:hover {
   background-color: rgb(144, 173, 187, 0.3);
   color: white;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media>li {
+    display: inline;
+}
+
+.social-media i {
+    font-size: 450%;
+    padding: 3% 7%;
+    margin: 1%;
+    color: #90ADBB;
+}
+
+.social-media i:hover {
+    color: rgb(144, 173, 187, 0.3);
 }
