@@ -98,8 +98,22 @@
     <!-- contact me form -->
     <section class="contactme-container">
       <div class="contactme">
-        <h2 class="text-center mb-5">Let's get in touch!</h2>
-        <form onsubmit="return sendMail(this);">
+        <h2 id="get-in-touch" class="text-center mb-5">
+          Let's get in touch!
+        </h2>
+        <div id="email-success" class="hide">
+          <h2 class="text-center">
+            Thank you! Email successfully sent
+            <i class="fa-regular fa-face-smile-beam"></i>
+          </h2>
+        </div>
+        <div id="email-fail" class="hide">
+          <h2 class="text-center mb-5">
+            Sorry, there's something wrong... please try again
+            <i class="fa-regular fa-face-frown-open"></i>
+          </h2>
+        </div>
+        <forms id="contact-form" onsubmit="return sendMail(this);">
           <input
             type="text"
             name="name"
@@ -121,7 +135,7 @@
             name="content"
             id="content"
             class="form-control mb-4"
-            placeholder="Content"
+            placeholder="Your message here"
             required
           ></textarea>
           <div class="form-row text-center">
@@ -134,8 +148,6 @@
         </form>
       </div>
     </section>
-
-    <!-- find way to show success message after 200 message -->
 
     <!-- scripts -->
     <script
