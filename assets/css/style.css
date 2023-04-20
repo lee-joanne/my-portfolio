@@ -61,7 +61,8 @@ nav .navbar-nav a:hover{
 }
 
 .aboutme-section button {
-  
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #myface {
