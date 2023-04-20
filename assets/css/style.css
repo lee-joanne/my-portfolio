@@ -39,7 +39,7 @@ nav .navbar-nav a:hover{
 
 .projectpage-sectioning {
   position: relative;
-  padding-top: 35px;
+  padding-top: 10px;
 }
 
 .homepage-centering-div {
@@ -57,7 +57,7 @@ nav .navbar-nav a:hover{
   background-repeat: no-repeat;
   min-height: 700px;
   position: relative;
-  padding-top: 35px;
+  padding-top: 15px;
 }
 
 .aboutme-section button {
@@ -146,7 +146,7 @@ nav .navbar-nav a:hover{
 
 .social-media-container {
   position: relative;
-  padding-top: 35px;
+  padding-top: 15px;
   background-image: url("../images/plant2.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -163,6 +163,31 @@ ul {
 
 #email-fail {
   color: #90ADBB;
+}
+
+.skill-section {
+  background-image: url("../images/skills-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skill-section-transparent {
+  background-color:rgb(255,255,255, 0.7);
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill-section img {
+  max-width: 250px;
+  max-height: 110px;
+  width: auto;
+  height: auto;
+  padding: 10px;
 }
 
 .social-media {
