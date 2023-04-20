@@ -121,6 +121,11 @@ nav .navbar-nav a:hover{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.card img {
+  height: 175px;
+  object-fit: fill;
+}
+
 .hide {
   display: none !important;
 }
@@ -129,7 +134,7 @@ nav .navbar-nav a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px 10px;
+  gap: 20px 15px;
 }
 
 .btn {
@@ -208,7 +213,6 @@ ul {
 .social-media i:hover {
     color: rgb(144, 173, 187, 0.3);
 }
-
 
 .contactme-container {
     background: url(../images/contactme-img.webp) no-repeat fixed center/cover;
