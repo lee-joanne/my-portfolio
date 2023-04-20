@@ -37,7 +37,7 @@ nav .navbar-nav a:hover{
   position: relative;
 }
 
-.page-sectioning {
+.projectpage-sectioning {
   position: relative;
   padding-top: 35px;
 }
@@ -55,7 +55,9 @@ nav .navbar-nav a:hover{
 .aboutme-section {
   background-image: url("../images/plant1.png");
   background-repeat: no-repeat;
-  min-height: 750px;
+  min-height: 700px;
+  position: relative;
+  padding-top: 35px;
 }
 
 #myface {
@@ -80,7 +82,7 @@ nav .navbar-nav a:hover{
 
 .aboutme-btn {
   border: none;
-  background-color: white;
+  background: transparent;
   padding: 0 10px;
 }
 
@@ -198,4 +200,40 @@ ul {
 
 .contactme > h2 {
   color: #90ADBB;
+}
+
+@media screen and (max-width: 1080px) {
+  .aboutme-mediaquery {
+    background-color:rgb(255,255,255, 0.9);
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  #biography-container, #myhobbies-container {
+    flex-direction: column;
+}
+
+  #biography-container p, #myhobbies-container p {
+      margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+  .contactme {
+    width: 75%;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #myface {
+    height: 300px;
+    width: 300px;
+  }
+
+  .aboutme-img {
+    width: 200px;
+    height: 200px;
+  }
 }
