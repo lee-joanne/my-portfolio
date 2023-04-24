@@ -214,8 +214,6 @@ ul {
     color: rgb(144, 173, 187, 0.3);
 }
 
-
-
 @media screen and (max-width: 1080px) {
   .aboutme-mediaquery {
     background-color:rgb(255,255,255, 0.9);
