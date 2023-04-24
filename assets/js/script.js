@@ -20,4 +20,3 @@ function displayMyHobbies() {
     hobbyBtn.classList.remove("aboutme-nonactivelink");
     bioBtn.classList.add("aboutme-nonactivelink")
 }
-
