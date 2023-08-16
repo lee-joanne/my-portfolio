@@ -1,7 +1,7 @@
 let emailSuccess = document.getElementById("email-success");
 let emailFail = document.getElementById("email-fail");
 let getTouch = document.getElementById("get-in-touch");
-let contactForm = documet.getElementById("contact-form");
+let contactForm = document.getElementById("contact-form");
 
 
 function sendMail(contactForm) {
