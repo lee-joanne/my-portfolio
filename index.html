@@ -32,14 +32,19 @@
 
   <body>
     <!-- navigation bar -->
-    <nav
-      class="p-1 navbar navbar-expand-lg navbar-light bg-white border fixed-top"
-    >
+    <nav class="navbar navbar-expand-sm bg-transparent fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.jpeg" alt="" width="65" height="65" />
+          <img
+            id="navbar-logo"
+            src="assets/images/logo-transp.png"
+            alt="image of a rabbit"
+            width="65"
+            height="65"
+          />
         </a>
         <button
+          id="toggle-btn"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -48,18 +53,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-tree"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav navigation-links ms-auto">
             <a
-              class="nav-link active"
+              class="nav-link active text-dark"
               href="index.html"
               aria-label="Homepage of portfolio website"
               >Home</a
             >
             <a
-              class="nav-link"
+              class="nav-link text-dark"
               aria-label="Clicking this will go to contact me page"
               href="contactme.html"
               >Contact Me</a
@@ -70,23 +75,18 @@
     </nav>
 
     <!-- hero image and main page section -->
-    <section class="heroimage-sectioning">
-      <div class="homepage-centering-div">
-        <h1>Hello! My name is Joanne</h1>
-        <img
-          id="myface"
-          class="pt-2 pb-2"
-          src="assets/images/myface.webp"
-          alt="Image of my face"
-        />
-        <h2>I am a Junior Full Stack Developer</h2>
-      </div>
+    <section
+      class="hero-background d-flex align-items-center justify-content-center"
+    >
+      <h1 class="text-white fade-in-element">
+        I'm Joanne, a Junior Full Stack Developer
+      </h1>
     </section>
 
-    <!-- about me section -->
+    <!-- about me section  -->
     <section class="aboutme-section">
       <div class="aboutme-mediaquery">
-        <h2 class="text-center pb-5">- About Me -</h2>
+        <h2 class="text-center text-white pt-5 pb-3">- About Me -</h2>
         <div class="text-center">
           <button
             id="biography-btn"
@@ -110,7 +110,7 @@
               src="assets/images/aboutme-img.webp"
               alt="My face, again!"
             />
-            <p>
+            <p class="text-white">
               Hello! I am a Canadian from a small city called Sarnia in Ontario,
               currently living in Vancouver. Before Vancouver, I lived in
               Ireland for five years and worked in Quality in the AIML
@@ -131,7 +131,7 @@
               src="assets/images/myhobbies-img.webp"
               alt="A fox I drew!"
             />
-            <p>
+            <p class="text-white">
               In my spare time outside of coding, I like to paint, draw,
               journal, listen to reverby music, take photographs, and play
               vintage Nintendo consoles. I also enjoy ice skating, swimming,
@@ -144,8 +144,8 @@
 
     <!-- my projects section -->
     <section class="projectpage-sectioning">
-      <h2 class="text-center pb-5">- My Projects -</h2>
-      <div class="project-centering-container pb-5">
+      <h2 class="text-center pb-5 text-white">- My Projects -</h2>
+      <div class="project-centering-container pb-3">
         <div class="card" style="width: 18rem">
           <img
             class="card-img-top"
@@ -326,8 +326,8 @@
             <div>
               <h5 class="card-title text-center">Yakker Back End</h5>
               <p class="card-text pb-3">
-                Back end API for Yakker created with Django REST Framework.
-                PostgreSQL database used.
+                Back end RESTful API for Yakker created with Django REST
+                Framework. PostgreSQL database used.
               </p>
             </div>
             <div class="mx-auto w-50">
@@ -360,8 +360,8 @@
             <div>
               <h5 class="card-title text-center">Studio Ghibli Memory Game</h5>
               <p class="card-text pb-3">
-                Interactive memory game created with vanilla JavaScript, HTML,
-                CSS, Bootstrap.
+                Interactive Studio Ghibli-themed memory game created with
+                vanilla JavaScript, HTML, CSS, and Bootstrap.
               </p>
             </div>
             <div class="mx-auto w-50">
@@ -374,10 +374,44 @@
                 >Github Link</a
               >
               <a
-                href="hhttps://lee-joanne.github.io/memory-game/"
+                href="https://lee-joanne.github.io/memory-game/"
                 target="_blank"
                 rel="noopener"
                 aria-label="Visit memory game live page (opens in a new tab)"
+                class="btn d-block"
+                >Live Link</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="assets/images/ghoul-image.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title text-center">Ghouls Just Wanna Have Fun</h5>
+              <p class="card-text pb-3">
+                Halloween-themed events website for Code Institute's October
+                Hackathon.
+              </p>
+            </div>
+            <div class="mx-auto w-50">
+              <a
+                href="https://github.com/lee-joanne/ghouls-just-wanna-have-fun/tree/main"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit hackathon GitHub page (opens in a new tab)"
+                class="btn d-block mb-1"
+                >Github Link</a
+              >
+              <a
+                href="https://lee-joanne.github.io/ghouls-just-wanna-have-fun/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit hackathon live page (opens in a new tab)"
                 class="btn d-block"
                 >Live Link</a
               >
@@ -388,10 +422,10 @@
     </section>
 
     <!-- skills section -->
-    <section>
+    <section class="pt-5">
       <div class="skill-section">
         <div class="skill-section-transparent">
-          <h2 class="text-center pt-3 pb-5">- Skills -</h2>
+          <h2 class="text-center text-white pt-3 pb-3">- Skills -</h2>
           <div class="skill-icons pb-5">
             <div>
               <img src="assets/images/html5.webp" alt="" />
@@ -442,7 +476,7 @@
 
     <!-- social media section -->
     <section class="social-media-container">
-      <h2 class="text-center pb-5">- Let's Connect -</h2>
+      <h2 class="text-center pt-3 pb-3 text-white">- Let's Connect -</h2>
       <ul class="social-media pb-5 mb-0">
         <li>
           <a
@@ -480,8 +514,10 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- local JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

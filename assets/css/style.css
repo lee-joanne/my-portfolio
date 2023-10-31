@@ -1,194 +1,181 @@
-a* {
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Outfit:wght@200&display=swap');
+
+/* main styles  */
+
+* {
     margin: 0;
     padding: 0;
     border: none;
 }
 
-h1, h2 {
-  font-family: 'Cardo', serif;
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #526760;
 }
 
-h3, h5, p {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3 {
+    font-family: 'Crimson Text', serif;
 }
 
-nav {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+nav .navbar-nav a:hover {
+    text-decoration: underline;
 }
 
-.navigation-links {
-    font-family: 'Cardo', serif;
+.nav-scroll {
+    color: white;
+    border-width:3px;
 }
 
-nav .navbar-nav a{
-  color: #90ADBB !important;
-}
-
-nav .navbar-nav a:hover{
-  color: black !important;
-}
-
-.nav-link.active {
-    color:black !important;
-}
-
-.heroimage-sectioning {
-  height: 100vh;
-  position: relative;
-}
-
-.projectpage-sectioning {
-  position: relative;
-  padding-top: 10px;
-}
-
-.homepage-centering-div {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.aboutme-section {
-  background-image: url("../images/plant1.png");
-  background-repeat: no-repeat;
-  min-height: 700px;
-  position: relative;
-  padding-top: 15px;
-}
-
-.aboutme-section button {
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-}
-
-#myface {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 50%;
-  animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(0.7);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-.aboutme-btn {
-  border: none;
-  background: transparent;
-  padding: 0 10px;
-}
-
-.aboutme-btn:hover {
-  color: rgb(144, 173, 187, 0.3)
-}
-
-.aboutme-activelink {
-  color: rgb(144, 173, 187, 0.3)
-}
-
-.aboutme-nonactivelink {
-  color: #90ADBB;
-}
-
-.aboutme-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-#biography-container, #myhobbies-container {
-  width: 65%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-
-.card {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.hide {
-  display: none !important;
-}
-
-.project-centering-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px 10px;
-}
-
-.btn {
-  background-color: #90ADBB;
-  border: none;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
-.btn:hover {
-  background-color: rgb(144, 173, 187, 0.3);
-  color: white;
-}
-
-.social-media-container {
-  position: relative;
-  padding-top: 15px;
-  background-image: url("../images/plant2.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
+.active {
+    text-decoration: underline !important;
 }
 
 ul {
-  padding-left: 0;
+    padding-left: 0;
 }
 
-#email-success {
-  color: #90ADBB;
+/* homepage section  */
+
+.hero-background {
+    background-image: url("../images/hero-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
 }
 
-#email-fail {
-  color: #90ADBB;
+.fade-in-element {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* about me section  */
+
+.hide {
+    display: none !important;
+}
+
+.aboutme-section {
+    min-height: 600px;
+}
+
+.aboutme-section button {
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#myface {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.aboutme-btn {
+    border: none;
+    background: transparent;
+    padding: 0 10px;
+}
+
+.aboutme-btn:hover {
+    color: #AFBBBB;
+}
+
+.aboutme-activelink {
+    color: #AFBBBB;
+}
+
+.aboutme-nonactivelink {
+    color: #122F2A;
+}
+
+.aboutme-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#biography-container,
+#myhobbies-container {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+/* projects section  */
+
+.project-centering-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 10px;
+}
+
+.btn {
+    background-color: #122F2A;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+    background-color: #AFBBBB;
+    color: white;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+}
+
+/* skills section  */
 
 .skill-section {
-  background-image: url("../images/skills-background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../images/skills-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .skill-section-transparent {
-  background-color:rgb(255,255,255, 0.7);
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 .skill-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .skill-section img {
-  max-width: 250px;
-  max-height: 110px;
-  width: auto;
-  height: auto;
-  padding: 10px;
+    max-width: 250px;
+    max-height: 110px;
+    width: auto;
+    height: auto;
+    padding: 10px;
 }
+
+/* social media section  */
 
 .social-media {
     text-align: center;
@@ -202,68 +189,83 @@ ul {
     font-size: 400%;
     padding: 1% 7%;
     margin: 1%;
-    color: #90ADBB;
+    color: #122F2A;
 }
 
 .social-media i:hover {
-    color: rgb(144, 173, 187, 0.3);
+    color: #AFBBBB;
 }
 
+/* contact page  */
 
 .contactme-container {
-    background: url(../images/contactme-img.webp) no-repeat fixed center/cover;
+    background: url(../images/contactme-background.jpeg) no-repeat fixed center/cover;
     width: 100%;
     height: 100vh;
 }
 
 .contactme {
-  background-color:rgb(255,255,255, 0.7);
-  width: 40%;
-  margin-top: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 75px 90px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 40%;
+    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 75px 90px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.contactme > h2 {
-  color: #90ADBB;
+.contactme>h2 {
+    color: #122F2A;
 }
+
+/* media queries  */
 
 @media screen and (max-width: 1080px) {
-  .aboutme-mediaquery {
-    background-color:rgb(255,255,255, 0.9);
-    padding: 0 10px;
-    text-align: justify;
-  }
+    .aboutme-mediaquery {
+        padding: 0 10px;
+        text-align: justify;
+    }
 
-  #biography-container, #myhobbies-container {
-    flex-direction: column;
-}
+    .aboutme-img {
+        width: 250px;
+        height: 250px;
+    }
 
-  #biography-container p, #myhobbies-container p {
-      margin-top: 20px;
-  }
+    #biography-container,
+    #myhobbies-container {
+        flex-direction: column;
+    }
+
+    #biography-container p,
+    #myhobbies-container p {
+        margin-top: 20px;
+    }
+
+    .projectpage-sectioning {
+        padding-top: 40px;
+    }
 
 }
 
 @media screen and (max-width: 1050px) {
-  .contactme {
-    width: 75%;
-    padding: 50px;
-  }
+    .contactme {
+        width: 75%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hero-background>h1 {
+            font-size: 4vh;
+            padding-left: 5px;
+        }
 }
 
 @media screen and (max-width: 415px) {
-  #myface {
-    height: 300px;
-    width: 300px;
-  }
-
-  .aboutme-img {
-    width: 200px;
-    height: 200px;
-  }
+    .aboutme-img {
+        width: 200px;
+        height: 200px;
+    }
 }

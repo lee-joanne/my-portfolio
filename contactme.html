@@ -40,14 +40,19 @@
 
   <body>
     <!-- navigation bar -->
-    <nav
-      class="p-1 navbar navbar-expand-lg navbar-light bg-white border fixed-top"
-    >
+    <nav class="navbar navbar-expand-sm bg-transparent fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.jpeg" alt="" width="65" height="65" />
+          <img
+            id="navbar-logo"
+            src="assets/images/logo-transp.png"
+            alt="image of a rabbit"
+            width="65"
+            height="65"
+          />
         </a>
         <button
+          id="toggle-btn"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -56,19 +61,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-tree"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav navigation-links ms-auto">
             <a
-              class="nav-link"
-              aria-label="Homepage of portfolio website"
-              aria-current="page"
+              class="nav-link text-dark"
               href="index.html"
+              aria-label="Homepage of portfolio website"
               >Home</a
             >
             <a
-              class="nav-link active"
+              class="nav-link active text-dark"
               aria-label="Clicking this will go to contact me page"
               href="contactme.html"
               >Contact Me</a
