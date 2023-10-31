@@ -21,6 +21,10 @@ nav .navbar-nav a:hover {
     text-decoration: underline;
 }
 
+nav button {
+    text-decoration: none !important;
+}
+
 .nav-scroll {
     color: white;
     border-width:3px;
