@@ -21,8 +21,8 @@ nav .navbar-nav a:hover {
     text-decoration: underline;
 }
 
-nav button {
-    text-decoration: none !important;
+.nav-color {
+    color: black !important;
 }
 
 .nav-scroll {
@@ -209,7 +209,7 @@ ul {
 }
 
 .contactme {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: transparent;
     width: 40%;
     margin-top: 25px;
     position: absolute;
@@ -257,6 +257,12 @@ ul {
     .contactme {
         width: 75%;
         padding: 50px;
+    }
+}
+
+@media screen and (max-height: 718px) {
+    .contactme {
+        padding: 25px;
     }
 }
 

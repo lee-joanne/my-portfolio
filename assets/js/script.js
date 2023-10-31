@@ -27,12 +27,12 @@ $(document).ready(function() {
         if ($(window).scrollTop() > 50) {
             $('#navbar').removeClass('bg-transparent').addClass('bg-dark').addClass('bg-opacity-50')
             $('.nav-link').addClass('text-white')
-            $('#toggle-btn').addClass('nav-scroll')
+            $('#toggle-btn').addClass('nav-scroll').removeClass('nav-color')
         // style when scrolled to top
         } else {
             $('#navbar').removeClass('bg-dark').addClass('bg-transparent');
             $('.nav-link').removeClass('text-white').addClass('text-dark')
-            $('#toggle-btn').removeClass('nav-scroll')
+            $('#toggle-btn').removeClass('nav-scroll').addClass('nav-color')
         }
     });
 });
