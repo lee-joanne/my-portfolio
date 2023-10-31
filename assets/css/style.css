@@ -193,7 +193,7 @@ ul {
 /* contact page  */
 
 .contactme-container {
-    background: url(../images/contactme-image.webp) no-repeat fixed center/cover;
+    background: url(../images/contactme-image.jpg) no-repeat fixed center/cover;
     width: 100%;
     height: 100vh;
 }
