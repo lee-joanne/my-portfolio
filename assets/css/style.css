@@ -41,7 +41,7 @@ ul {
 /* homepage section  */
 
 .hero-background {
-    background-image: url("../images/hero-background.jpeg");
+    background-image: url("../images/hero-background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -203,7 +203,7 @@ ul {
 /* contact page  */
 
 .contactme-container {
-    background: url(../images/contactme-background.jpeg) no-repeat fixed center/cover;
+    background: url(../images/contactme-background.webp) no-repeat fixed center/cover;
     width: 100%;
     height: 100vh;
 }
