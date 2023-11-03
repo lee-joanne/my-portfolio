@@ -289,4 +289,9 @@ ul {
         width: 200px;
         height: 200px;
     }
+
+    .image-div {
+        margin-left: 5%;
+        margin-right: 5%;   
+    }
 }
