@@ -125,6 +125,7 @@ ul {
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .proj-image {
@@ -274,6 +275,11 @@ ul {
 @media screen and (max-height: 718px) {
     .contactme {
         padding: 18px;
+    }
+
+    .social-media a {
+        padding-left: 4%;
+        padding-right: 4%;
     }
 }
 
