@@ -204,8 +204,7 @@ ul {
 
 .social-media i {
     font-size: 400%;
-    padding: 1% 7%;
-    margin: 1%;
+    margin: 1% 7%;
     color: #122F2A;
 }
 
@@ -271,16 +270,16 @@ ul {
         width: 75%;
         padding: 50px;
     }
+
+    .social-media i {
+        margin: 1% 10% !important;
+    }
 }
 
 @media screen and (max-height: 718px) {
+    /* media query for height  */
     .contactme {
         padding: 18px;
-    }
-
-    .social-media a {
-        padding-left: 4%;
-        padding-right: 4%;
     }
 }
 
