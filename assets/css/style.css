@@ -232,8 +232,13 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.contactme>h2 {
-    color: #122F2A;
+.contactme button {
+    background-color: #122F2A;
+    border: none;
+}
+
+.contactme button:hover {
+    background-color: #AFBBBB;
 }
 
 /* media queries  */
@@ -272,7 +277,7 @@ ul {
     }
 
     .social-media i {
-        margin: 1% 10% !important;
+        margin: 1% 11% !important;
     }
 }
 
