@@ -6,8 +6,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    cursor: url("../images/cat-cursor.png"), pointer !important;
-
+    cursor: url("../images/cat-cursor.png"), auto !important;
 }
 
 body {
