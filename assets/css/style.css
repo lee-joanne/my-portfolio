@@ -60,7 +60,7 @@ ul {
     margin: 0 auto;
     letter-spacing: 0.1em;
     animation:
-            typing 4.5s steps(41) both,
+            typing 4s steps(50) both,
             blink-caret 1s step-end infinite;
 }
 
@@ -70,7 +70,7 @@ ul {
     }
 
     to {
-        width: 41ch;
+        width: 51ch;
     }
 }
 
@@ -243,7 +243,7 @@ ul {
 }
 
 .contactme {
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.5);
     width: 40%;
     margin-top: 25px;
     position: absolute;
@@ -329,11 +329,12 @@ ul {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 995px) {
     .typewriter {
         white-space: normal;
         animation: none;
         border-right: none;
+        text-align: center;
     }
 }
 
@@ -346,7 +347,6 @@ ul {
 @media screen and (max-width: 680px) {
     .hero-background>h1 {
             font-size: 4vh;
-            text-align: center;
         }
 }
 
