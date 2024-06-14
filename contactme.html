@@ -40,7 +40,7 @@
 
   <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-sm bg-transparent fixed-top" id="navbar">
+    <nav class="navbar navbar-expand bg-transparent fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -52,8 +52,7 @@
           />
         </a>
         <button
-          id="toggle-btn"
-          class="navbar-toggler nav-color"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -61,10 +60,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fa-solid fa-tree"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav navigation-links ms-auto">
+          <div class="navbar-nav ms-auto">
             <a
               class="nav-link text-dark"
               href="index.html"
@@ -84,7 +83,12 @@
 
     <!-- contact me form -->
     <section class="contactme-container">
-      <div class="contactme">
+      <div class="contactme text-center">
+        <img
+          id="dragonite"
+          src="assets/images/dragonite-flying.png"
+          height="80"
+        />
         <h2 id="get-in-touch" class="text-center mb-4">Let's get in touch!</h2>
         <div id="email-success" class="hide">
           <h2 class="text-center">
