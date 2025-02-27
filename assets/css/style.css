@@ -59,7 +59,7 @@ ul {
     margin: 0 auto;
     letter-spacing: 0.1em;
     animation:
-            typing 4s steps(50) both,
+            typing 4s steps(54) both,
             blink-caret 1s step-end infinite;
 }
 
@@ -69,7 +69,7 @@ ul {
     }
 
     to {
-        width: 53ch;
+        width: 59ch;
     }
 }
 
@@ -135,6 +135,14 @@ ul {
 
 /* projects section  */
 
+.project-background {
+    background-image: url("../images/hero-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +156,8 @@ ul {
     display: inline-block;
     margin-bottom: 30px;
     border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .proj-image {
@@ -311,8 +321,8 @@ ul {
         margin-top: 20px;
     }
 
-    .projectpage-sectioning {
-        padding-top: 40px;
+    .aboutme-section {
+        margin-bottom: 4rem;
     }
 
 }
