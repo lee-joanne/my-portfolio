@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Full Stack Developer portfolio website."
+      content="UI/UX Designer & Full Stack Developer portfolio website."
     />
 
     <!-- Bootstrap -->
@@ -36,7 +36,7 @@
 
   <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand bg-transparent fixed-top" id="navbar">
+    <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -68,9 +68,9 @@
             >
             <a
               class="nav-link text-dark"
-              href="portfolio.html"
-              aria-label="View my portfolio and work."
-              >Portfolio</a
+              href="about.html"
+              aria-label="View details about me."
+              >About</a
             >
             <a
               class="nav-link text-dark"
@@ -84,163 +84,133 @@
     </nav>
 
     <!-- hero image and main page section -->
-    <section
-      class="hero-background d-flex align-items-center justify-content-center"
-    >
-      <h1 class="text-white typewriter">
-        &lt;h1&gt;I'm Joanne, a Full Stack Developer & UX Designer&lt;/h1&gt;
-      </h1>
-    </section>
-
-    <!-- about me section  -->
-    <section class="aboutme-section">
-      <div class="aboutme-mediaquery">
-        <h2 class="text-center text-white pt-4 pb-4">- About Me -</h2>
-        <div class="text-center">
-          <button
-            id="biography-btn"
-            class="aboutme-btn aboutme-activelink"
-            type="button"
-          >
-            Biography
-          </button>
-          <button
-            id="myhobbies-btn"
-            class="aboutme-btn aboutme-nonactivelink"
-            type="button"
-          >
-            Hobbies
-          </button>
-        </div>
-        <div class="mt-5">
-          <div id="biography-container">
-            <img
-              class="aboutme-img mx-4"
-              src="assets/images/aboutme-img.webp"
-              alt="My face, again!"
-            />
-            <p class="text-white">
-              I'm a Canadian currently based in Vancouver. Before moving here, I
-              spent five years in Ireland working in Quality within Apple’s AIML
-              department. That experience introduced me to the tech industry and
-              led me to pursue a Full Stack Development Diploma with an Advanced
-              Front-End Specialization at Code Institute. At Inkeros, I worked
-              as a Full Stack Software Developer, playing a key role in
-              designing and developing the company’s new platform. Now, I’m
-              shifting my focus to UI/UX design, driven by my passion for
-              creating user-centered interfaces.
-            </p>
-          </div>
-          <div id="myhobbies-container" class="hide">
-            <img
-              class="aboutme-img mx-4"
-              src="assets/images/myhobbies-img.webp"
-              alt="A fox I drew!"
-            />
-            <p class="text-white">
-              In my free time, apart from coding, I enjoy creating
-              illustrations, painting, journaling, listening to
-              shoegaze/dreampop, collecting vinyl records, vintage gaming, and
-              taking film photographs. I also like to go hiking in local spots
-              and explore the city on weekends. Currently, I am interested in
-              knitting, Nintendo games, film photography, and designing.
-            </p>
-          </div>
-        </div>
+    <section class="hero-background d-flex justify-content-center">
+      <div class="text-center hero-text">
+        <h1>Joanne Lee</h1>
+        <p class="pt-2">UI/UX Designer & Full Stack Software Developer.</p>
       </div>
     </section>
 
-    <!-- skills section -->
-    <section>
-      <div class="skill-section">
-        <div class="skill-section-transparent">
-          <h2 class="text-center text-white pt-4 pb-4">- Skills -</h2>
-          <div class="skill-icons pb-5">
-            <div>
-              <img src="assets/images/html5.webp" alt="Logo of HTML5" />
-            </div>
-            <div>
-              <img src="assets/images/css3.webp" alt="Logo of CSS3" />
-            </div>
-            <div>
-              <img
-                src="assets/images/javascript.webp"
-                alt="Logo of JavaScript"
-              />
-            </div>
-            <div>
-              <img src="assets/images/bootstrap.webp" alt="Logo of Bootstrap" />
-            </div>
-            <div>
-              <img src="assets/images/jquery.webp" alt="Logo of jQuery" />
-            </div>
-            <div>
-              <img src="assets/images/python.webp" alt="Logo of Python" />
-            </div>
-            <div>
-              <img src="assets/images/mysql.webp" alt="Logo of MySQL" />
-            </div>
-            <div>
-              <img
-                src="assets/images/postgresql.webp"
-                alt="Logo of Postgresql"
-              />
-            </div>
-            <div>
-              <img src="assets/images/flask.webp" alt="Logo of Flask" />
-            </div>
-            <div>
-              <img src="assets/images/django.webp" alt="Logo of Django" />
-            </div>
-            <div>
-              <img
-                src="assets/images/drf.webp"
-                alt="Logo of Django Rest Framework"
-              />
-            </div>
-            <div>
-              <img src="assets/images/react.webp" alt="Logo of React" />
-            </div>
-            <div>
-              <img src="assets/images/git.webp" alt="Logo of Git" />
-            </div>
-            <div>
-              <img src="assets/images/github.webp" alt="Logo of GitHub" />
-            </div>
-            <div>
-              <img src="assets/images/figma.webp" alt="Logo of Figma" />
-            </div>
-            <div>
-              <img src="assets/images/nodejs.webp" alt="Logo of NodeJS" />
-            </div>
-          </div>
+    <div class="container pt-3 pb-3">
+      <div class="row justify-content-center">
+        <div
+          class="col-12 col-sm-10 col-md-8 col-lg-6 p-4 border rounded bg-white"
+        >
+          <h2 class="h5 font-weight-bold mb-3">👋 Hey there!</h2>
+          <p class="small">
+            This portfolio is a work in progress — I’m currently updating each
+            project with detailed case studies, design decisions, and process
+            insights.
+          </p>
+          <p class="small mt-2">
+            In the meantime, feel free to check out the live demos, GitHub
+            repos, or Figma designs linked in each project card.
+          </p>
+          <p class="small mt-2 italic text-muted">
+            Thanks for stopping by — more coming soon!
+          </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- social media section -->
-    <section class="social-media-container">
-      <h2 class="text-center pt-4 pb-4 text-white">- Let's Connect -</h2>
-      <ul class="social-media pb-5 mb-0">
-        <li>
-          <a
-            href="https://github.com/lee-joanne"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit lee-joanne Github page (opens in new link)"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/lee-joanne54/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Visit my LinkedIn page (opens in a new tab)"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </li>
-      </ul>
+    <!-- List view of portfolio websites -->
+    <section class="homepage-portfolio">
+      <div class="grid-container">
+        <a
+          href="https://github.com/lee-joanne/yakker-frontend/tree/main"
+          target="_blank"
+          aria-label="Link to Yakker GitHub Page (opens in a new tab)"
+        >
+          <div><img src="assets/images/yakker-fr-img.png" /></div>
+          <h3 class="pt-2">Yakker</h3>
+          <p>
+            A Twitter-style social media platform where users can sign up,
+            create posts, follow others, and like content. Built using React,
+            Django REST, and Axios.
+          </p>
+        </a>
+
+        <a
+          href="https://www.figma.com/proto/8Rk3fTTmTdHlnrAqExnyo7/Latitude-App?node-id=34-456&t=ozf3lxM2AC9aBiMh-1"
+          target="_blank"
+          aria-label="Opens Figma link for Latitude (opens in a new tab)"
+        >
+          <div><img src="assets/images/latitude.png" /></div>
+          <h3 class="pt-2">Latitude</h3>
+          <p>
+            A third-party flight aggregator showcasing affordable options from
+            official airlines only. Designed entirely in Figma.
+          </p>
+        </a>
+
+        <a
+          href="https://xttrust.github.io/HolyRecipes/"
+          target="_blank"
+          aria-label="Opens HolyRecipes deployed site (in a new tab)"
+        >
+          <div><img src="assets/images/holyrecipes.png" /></div>
+          <h3 class="pt-2"><i class="fa-solid fa-medal"></i> HolyRecipes</h3>
+          <p>
+            A festive recipe site allowing users to search for Christmas-themed
+            dishes via a built-in recipe API. Developed using HTML, CSS,
+            JavaScript, and Bootstrap.
+          </p>
+          <p>Awarded second place in Code Institute's Christmas Hackathon.</p>
+        </a>
+
+        <a
+          href="https://lee-joanne.github.io/cork-paints/"
+          target="_blank"
+          aria-label="Link to deployed Cork Paints (opens in a new tab)"
+        >
+          <div><img src="assets/images/corkpaints-img.png" /></div>
+          <h3 class="pt-2">Cork Paints</h3>
+          <p>
+            A Cork City-based painting workshop website where users can explore
+            courses and book sessions. Built with HTML, CSS, and Bootstrap.
+          </p>
+        </a>
+
+        <a
+          href="https://lee-joanne.github.io/memory-game/"
+          target="_blank"
+          aria-label="Studio Ghibli memory game (opens in a new tab)"
+        >
+          <div><img src="assets/images/memorygame-img.png" /></div>
+          <h3 class="pt-2">Studio Ghibli Memory Game</h3>
+          <p>
+            An interactive memory game featuring Studio Ghibli-themed cards.
+            Players have 2.5 minutes to complete the game. Developed using HTML,
+            CSS, Bootstrap, and JavaScript.
+          </p>
+        </a>
+
+        <a
+          href="https://lee-joanne.github.io/geo-quiz/"
+          target="_blank"
+          aria-label="Geo Quiz deployed link (opens in a new tab)"
+        >
+          <div><img src="assets/images/geoquiz-img.png" /></div>
+          <h3 class="pt-2">GeoQuiz</h3>
+          <p>
+            A geography-themed quiz game with three progressively challenging
+            rounds. Built with HTML, CSS, Bootstrap, and JavaScript.
+          </p>
+        </a>
+
+        <a
+          href="https://github.com/lee-joanne/rageit"
+          target="_blank"
+          aria-label="GitHub page for Rageit (opens in a new tab)"
+        >
+          <div><img src="assets/images/rageit-img.png" /></div>
+          <h3 class="pt-2">Rageit</h3>
+          <p>
+            A Reddit-inspired blog platform where users can post anonymously and
+            share what’s been bothering them. Created using Django.
+          </p>
+        </a>
+      </div>
     </section>
 
     <!-- scripts -->
@@ -263,6 +233,5 @@
     <!-- local JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/biographyscript.js"></script>
   </body>
 </html>

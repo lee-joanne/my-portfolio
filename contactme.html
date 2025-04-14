@@ -38,7 +38,7 @@
     </script>
   </head>
 
-  <body>
+  <body style="padding-top:2rem;">
     <!-- navigation bar -->
     <nav class="navbar navbar-expand bg-transparent fixed-top" id="navbar">
       <div class="container">
@@ -71,9 +71,9 @@
             >
             <a
               class="nav-link text-dark"
-              href="portfolio.html"
-              aria-label="View my portfolio and work."
-              >Portfolio</a
+              href="about.html"
+              aria-label="View details about me."
+              >About</a
             >
             <a
               class="nav-link text-dark active"
@@ -87,22 +87,22 @@
     </nav>
 
     <!-- contact me form -->
-    <section class="contactme-container">
+    <section class="contactme-container d-flex justify-content-center pt-5">
       <div class="contactme text-center">
-        <img
+        <img class="mb-2"
           id="dragonite"
           src="assets/images/dragonite-flying.webp"
-          height="70"
+          height="80"
         />
-        <h2 id="get-in-touch" class="text-center mb-4">Let's get in touch!</h2>
+        <h2 id="get-in-touch" class="text-center mb-4 pt-2">Let's get in touch!</h2>
         <div id="email-success" class="hide">
-          <h2 class="text-center">
+          <h2 class="text-center pt-2">
             Thank you! Email successfully sent
             <i class="fa-regular fa-face-smile-beam"></i>
           </h2>
         </div>
         <div id="email-fail" class="hide">
-          <h2 class="text-center mb-4">
+          <h2 class="text-center mb-3 pt-2">
             Sorry, there's something wrong... please try again
             <i class="fa-regular fa-face-frown-open"></i>
           </h2>
@@ -134,13 +134,37 @@
           ></textarea>
           <div class="form-row text-center">
             <div class="col">
-              <button type="submit" class="btn btn-secondary px-5 pt-2 pb-2">
+              <button type="submit" class="btn px-5 pt-2 pb-2">
                 Send
               </button>
             </div>
           </div>
         </form>
       </div>
+    </section>
+
+    <!-- social media links  -->
+    <section class="social-media-container pt-5">
+      <ul class="social-media">
+        <li>
+          <a
+            href="https://github.com/lee-joanne"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit lee-joanne Github page (opens in new link)"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/lee-joanne54/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit my LinkedIn page (opens in a new tab)"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
     </section>
 
     <!-- scripts -->
@@ -160,6 +184,8 @@
     ></script>
 
     <!-- local JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
