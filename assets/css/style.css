@@ -98,15 +98,21 @@ ul {
     object-fit: contain;
 }
 
-.grid-container a {
+.grid-container {
     display: inline-block;
-    transform: scale(1);
-    transition: transform 0.3s ease;
+}
+
+.grid-container a {
     text-decoration: none;
     color: inherit;
 }
 
-.grid-container a:hover {
+.grid-hover {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.grid-hover:hover {
     transform: scale(1.05);
 }
 
