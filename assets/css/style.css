@@ -176,7 +176,7 @@ ul {
     background-color: #5a5a5a;
     color: white;
     border: #e8e8e8 1.5px solid;
-    width:200px;
+    width: 100%;
 }
 
 .contactme button:hover {
