@@ -52,6 +52,19 @@ ul {
   display: none;
 }
 
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item.active:hover,
+.dropdown-menu .dropdown-item.active:focus {
+  background-color: transparent !important;
+  color: black !important;
+}
+
 /* HOMEPAGE - text section */
 
 .hero-background h1 {
