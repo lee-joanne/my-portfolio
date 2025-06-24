@@ -271,21 +271,22 @@ ul {
 }
 
 .case-section {
-  padding: 4rem 1rem;
+  padding: 2rem;
 }
 
-.toc-button {
-  margin: 0.5rem;
+.case-section h1 {
+  padding-bottom: 1.5rem;
 }
 
 .prototype img {
-  max-width: 30%;
-  padding: 2%;
+  max-width: 600px;
+  width: 100%;
   height: auto;
+  padding: 2%;
 }
 
 .user-table thead {
-  background-color: #f0f0f0;
+  background-color: #f8f9fa;
 }
 
 .user-table th,
@@ -296,6 +297,7 @@ ul {
 
 .user-table {
   font-size: 0.95rem;
+  color: #5a5a5a;
 }
 
 .img-fluid {
@@ -306,6 +308,20 @@ ul {
 .case-section img {
   max-height: 450px;
   object-fit: contain;
+}
+
+.gallery-img-wrapper {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-img-wrapper img {
+  max-height: 250px;
+  object-fit: contain;
+  width: 100%;
 }
 
 /* MEDIA QUERIES  */
