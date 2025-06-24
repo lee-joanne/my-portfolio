@@ -38,7 +38,11 @@
     <!-- navigation bar -->
     <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
+        <a
+          class="navbar-brand"
+          href="../index.html"
+          aria-label="Return to homepage (projects)"
+        >
           <img
             id="navbar-logo"
             src="../assets/images/logo-transp.png"
@@ -63,20 +67,51 @@
             <a
               class="nav-link text-dark"
               href="../index.html"
-              aria-label="Homepage of portfolio website"
+              aria-label="Homepage (projects page) of portfolio website"
               >Home</a
             >
+
             <a
               class="nav-link text-dark"
               href="../about.html"
-              aria-label="View details about me."
+              aria-label="View details about me"
               >About</a
             >
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../projects/yakker.html"
+                    aria-label="Jumps to Yakker case study"
+                    >Yakker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../projects/corkpaints.html"
+                    aria-label="Jumps to Cork Paints case study"
+                    >Cork Paints</a
+                  >
+                </li>
+              </ul>
+            </div>
             <a
               class="nav-link text-dark"
-              aria-label="Clicking this will go to contact me page"
               href="../contactme.html"
-              >Contact Me</a
+              aria-label="Clicking this will go to contact me page"
+              >Contact</a
             >
           </div>
         </div>
@@ -180,28 +215,30 @@
     </section>
 
     <!-- sample prototype section -->
-    <div class="text-center bg-light prototype">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <img
-            src="../assets/images/projects/corkpaints/corkpaints-desktop-home.png"
-            alt="Cork Paints homepage mockup desktop"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="../assets/images/projects/corkpaints/corkpaints-desktop-courses.png"
-            alt="Cork Paints courses page mockup desktop"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="../assets/images/projects/corkpaints/corkpaints-desktop-register.png"
-            alt="Cork Paints registration page mockup desktop"
-            class="img-fluid"
-          />
+    <div class="text-center bg-light prototype py-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/corkpaints/corkpaints-desktop-home.png"
+              alt="Cork Paints homepage mockup desktop"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/corkpaints/corkpaints-desktop-courses.png"
+              alt="Cork Paints courses page mockup desktop"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/corkpaints/corkpaints-desktop-register.png"
+              alt="Cork Paints registration page mockup desktop"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>

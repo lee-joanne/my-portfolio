@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,11 +38,15 @@
     </script>
   </head>
 
-  <body style="padding-top:2rem;">
+  <body style="padding-top: 2rem">
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand bg-transparent fixed-top" id="navbar">
+    <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="Returns to homepage (projects page)"
+        >
           <img
             id="navbar-logo"
             src="assets/images/logo-transp.png"
@@ -62,24 +66,56 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a
               class="nav-link text-dark"
-              href="index.html"
-              aria-label="Homepage of portfolio website"
+              href="../index.html"
+              aria-label="Homepage (projects page) of portfolio website"
               >Home</a
             >
+
             <a
               class="nav-link text-dark"
-              href="about.html"
-              aria-label="View details about me."
+              href="../about.html"
+              aria-label="View details about me"
               >About</a
             >
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../projects/yakker.html"
+                    aria-label="Jumps to Yakker case study"
+                    >Yakker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../projects/corkpaints.html"
+                    aria-label="Jumps to Cork Paints case study"
+                    >Cork Paints</a
+                  >
+                </li>
+              </ul>
+            </div>
             <a
               class="nav-link text-dark active"
+              href="../contactme.html"
               aria-label="Clicking this will go to contact me page"
-              href="contactme.html"
-              >Contact Me</a
+              >Contact</a
             >
           </div>
         </div>
@@ -89,13 +125,16 @@
     <!-- contact me form -->
     <section class="contactme-container d-flex justify-content-center pt-5">
       <div class="contactme text-center">
-        <img class="mb-2"
+        <img
+          class="mb-2"
           id="dragonite"
           src="assets/images/dragonite-flying.webp"
           height="80"
           alt="Icon of Dragonite flying."
         />
-        <h2 id="get-in-touch" class="text-center mb-4 pt-2">Let's get in touch!</h2>
+        <h2 id="get-in-touch" class="text-center mb-4 pt-2">
+          Let's get in touch!
+        </h2>
         <div id="email-success" class="hide">
           <h2 class="text-center pt-2">
             Thank you! Email successfully sent
@@ -135,9 +174,7 @@
           ></textarea>
           <div class="form-row text-center">
             <div class="col">
-              <button type="submit" class="btn py-2">
-                Send
-              </button>
+              <button type="submit" class="btn py-2">Send</button>
             </div>
           </div>
         </form>
