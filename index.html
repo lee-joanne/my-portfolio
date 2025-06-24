@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -86,45 +86,38 @@
     <!-- hero image and main page section -->
     <section class="hero-background d-flex justify-content-center">
       <div class="text-center hero-text">
-        <h1>Joanne Lee</h1>
+        <h1 class="fw-bold">Joanne Lee</h1>
         <p class="pt-2">UI/UX Designer & Full Stack Software Developer.</p>
       </div>
     </section>
 
-    <div class="container pt-3 pb-3">
-      <div class="row justify-content-center">
-        <div
-          class="col-12 col-sm-10 col-md-8 col-lg-6 p-4 border rounded bg-white"
-        >
-          <h2 class="h5 font-weight-bold mb-3">👋 Hey there!</h2>
-          <p class="small">
-            This portfolio is a work in progress — I’m currently updating each
-            project with detailed case studies, design decisions, and process
-            insights.
-          </p>
-          <p class="small mt-2">
-            In the meantime, feel free to check out the live demos, GitHub
-            repos, or Figma designs linked in each project card.
-          </p>
-          <p class="small mt-2 italic text-muted">
-            Thanks for stopping by — more coming soon!
-          </p>
-        </div>
-      </div>
-    </div>
-
     <!-- List view of portfolio websites -->
     <section class="homepage-portfolio">
       <div class="grid-container">
-        <a
-          href="https://github.com/lee-joanne/yakker-frontend/tree/main"
-          target="_blank"
-          aria-label="Link to Yakker GitHub Page (opens in a new tab)"
-        >
-          <div>
+        <a href="" aria-label="Link to LocalSpot (opens in a new tab)">
+          <div style="background-color: #e9e3dd">
             <img
               class="grid-hover"
-              src="assets/images/yakker-fr-img.png"
+              src="assets/images/projects/localspot.png"
+              alt="Showcase of LocalSpot on mobile."
+              style="height: 80%"
+            />
+          </div>
+          <h3 class="pt-2">LocalSpot - Case Study in Progress</h3>
+          <p>
+            A local discovery and booking mobile app for restaurants, events,
+            and activities. Built with Figma.
+          </p>
+        </a>
+
+        <a
+          href="projects/yakker.html"
+          aria-label="Link to Yakker case study page"
+        >
+          <div style="background-color: #e4e9ee">
+            <img
+              class="grid-hover"
+              src="assets/images/projects/yakker/yakker-fr-img.png"
               alt="Showcase of Yakker project on various devices."
             />
           </div>
@@ -141,14 +134,14 @@
           target="_blank"
           aria-label="Opens Figma link for Latitude (opens in a new tab)"
         >
-          <div>
+          <div style="background-color: #e7ebef">
             <img
               class="grid-hover"
-              src="assets/images/latitude.png"
+              src="assets/images/projects/latitude.png"
               alt="Showcase of Latitude project on laptop device."
             />
           </div>
-          <h3 class="pt-2">Latitude</h3>
+          <h3 class="pt-2">Latitude - Case Study in Progress</h3>
           <p>
             A third-party flight aggregator showcasing affordable options from
             official airlines only. Designed entirely in Figma.
@@ -160,20 +153,26 @@
           target="_blank"
           aria-label="Opens HolyRecipes deployed site (in a new tab)"
         >
-          <div>
+          <div style="background-color: #f3e7e6">
             <img
               class="grid-hover"
-              src="assets/images/holyrecipes.png"
+              src="assets/images/projects/holyrecipes.png"
               alt="Showcase of HolyRecipes project on various devices."
             />
           </div>
-          <h3 class="pt-2"><i class="fa-solid fa-medal"></i> HolyRecipes</h3>
+          <h3 class="pt-2">
+            <i class="fa-solid fa-medal"></i> HolyRecipes - Case Study in
+            Progress
+          </h3>
           <p>
             A festive recipe site allowing users to search for Christmas-themed
             dishes via a built-in recipe API. Developed using HTML, CSS,
             JavaScript, and Bootstrap.
+            <span class="fw-bold"
+              >Awarded second place in Code Institute's 2023 Christmas
+              Hackathon.</span
+            >
           </p>
-          <p>Awarded second place in Code Institute's Christmas Hackathon.</p>
         </a>
 
         <a
@@ -181,14 +180,14 @@
           target="_blank"
           aria-label="Link to deployed Cork Paints (opens in a new tab)"
         >
-          <div>
+          <div style="background-color: #f4f1f6">
             <img
               class="grid-hover"
-              src="assets/images/corkpaints-img.png"
+              src="assets/images/projects/corkpaints-img.png"
               alt="Showcase of Cork Paints project on various devices."
             />
           </div>
-          <h3 class="pt-2">Cork Paints</h3>
+          <h3 class="pt-2">Cork Paints - Case Study in Progress</h3>
           <p>
             A Cork City-based painting workshop website where users can explore
             courses and book sessions. Built with HTML, CSS, and Bootstrap.
@@ -200,14 +199,16 @@
           target="_blank"
           aria-label="Studio Ghibli memory game (opens in a new tab)"
         >
-          <div>
+          <div style="background-color: #e0e2db">
             <img
               class="grid-hover"
-              src="assets/images/memorygame-img.png"
+              src="assets/images/projects/memorygame-img.png"
               alt="Showcase of Memory Game project on various devices."
             />
           </div>
-          <h3 class="pt-2">Studio Ghibli Memory Game</h3>
+          <h3 class="pt-2">
+            Studio Ghibli Memory Game - Case Study in Progress
+          </h3>
           <p>
             An interactive memory game featuring Studio Ghibli-themed cards.
             Players have 2.5 minutes to complete the game. Developed using HTML,
@@ -220,14 +221,14 @@
           target="_blank"
           aria-label="Geo Quiz deployed link (opens in a new tab)"
         >
-          <div>
+          <div style="background-color: #e3e9ef">
             <img
               class="grid-hover"
-              src="assets/images/geoquiz-img.png"
+              src="assets/images/projects/geoquiz-img.png"
               alt="Showcase of GeoQuiz project on various devices."
             />
           </div>
-          <h3 class="pt-2">GeoQuiz</h3>
+          <h3 class="pt-2">GeoQuiz - Case Study in Progress</h3>
           <p>
             A geography-themed quiz game with three progressively challenging
             rounds. Built with HTML, CSS, Bootstrap, and JavaScript.
@@ -235,22 +236,20 @@
         </a>
 
         <a
-          href="https://github.com/lee-joanne/rageit"
+          href="https://drive.google.com/drive/folders/1IJB-YJleWySL_Ig-3yOECbethUbcMzoG?usp=sharing"
           target="_blank"
-          aria-label="GitHub page for Rageit (opens in a new tab)"
+          aria-label="Link to Google Drive of confidential case study."
         >
-          <div>
+          <div style="background-color: #e8e8e8">
             <img
               class="grid-hover"
-              src="assets/images/rageit-img.png"
-              alt="Showcase of Rageit project on various devices."
+              src="assets/images/locked.svg"
+              alt="Lock icon"
+              style="height: 100px; width: 100px"
             />
           </div>
-          <h3 class="pt-2">Rageit</h3>
-          <p>
-            A Reddit-inspired blog platform where users can post anonymously and
-            share what’s been bothering them. Created using Django.
-          </p>
+          <h3 class="pt-2">Confidential Projects - Case Study in Progress</h3>
+          <p>Access available upon request through the Google Drive link.</p>
         </a>
       </div>
     </section>

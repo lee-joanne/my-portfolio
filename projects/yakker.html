@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UI/UX Designer & Full Stack Developer portfolio website."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- local CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/favicon.png" />
+
+    <title>Joanne Lee - Portfolio</title>
+  </head>
+
+  <body style="padding-top: 0">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            id="navbar-logo"
+            src="../assets/images/logo-transp.png"
+            alt="image of a rabbit"
+            width="65"
+            height="65"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link text-dark"
+              href="../index.html"
+              aria-label="Homepage of portfolio website"
+              >Home</a
+            >
+            <a
+              class="nav-link text-dark"
+              href="../about.html"
+              aria-label="View details about me."
+              >About</a
+            >
+            <a
+              class="nav-link text-dark"
+              aria-label="Clicking this will go to contact me page"
+              href="../contactme.html"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Yakker heading  -->
+    <section class="yakker-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <h1>Yakker</h1>
+            <h3 class="text-muted">A Twitter-style social media platform.</h3>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/yakker/yakker-fr-img.png"
+              alt="Yakker on multiple devices"
+              class="yakker-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem statement and solution -->
+    <section class="case-section bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Problem</h2>
+            <p>
+              In an increasingly noisy and identity-driven digital world, many
+              users crave a space to share thoughts without the pressure of
+              building a public persona. While major platforms like Twitter
+              offer real-time interaction, they often come with complex
+              algorithms, content visibility issues, and identity-driven
+              engagement. I wanted to explore what it would look like to build a
+              stripped-back, community-focused social media platform, one where
+              users could post freely, follow others, and engage without the
+              social pressure of being "seen." Yakker was born out of a personal
+              challenge: could I design and build a working social platform from
+              scratch, with a focus on anonymity and simplicity?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold">Solution</h2>
+            <p>
+              Yakker is a Twitter-style microblogging platform built using React
+              on the front end and Django REST Framework on the back end. It
+              allows users to sign up, follow others, and share short posts in a
+              clean, anonymous feed. The design is intentionally minimal to
+              prioritize content over identity. There are no email verifications
+              or required personal details. Just text-based interactions that
+              emphasize conversation. Building Yakker helped me dive deep into
+              authentication, API development, and front-end state management,
+              while also exploring the UX implications of designing for
+              low-pressure social interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Role and tools -->
+    <section class="case-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <h5 class="fw-bold">My Role</h5>
+            <p>UX Designer, Full Stack Developer</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Tools</h5>
+            <p>Balsamiq, HTML/CSS, JavaScript, Django REST, React</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Timeline</h5>
+            <p>4 Weeks</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Process</h5>
+            <p>
+              User Stories, User Flows, Wireframes, Style Guide, Development,
+              Reflections
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prototype image -->
+    <div class="text-center bg-light prototype">
+      <img
+        src="../assets/images/projects/yakker/yakker-prototype.png"
+        alt="Yakker on desktop prototype"
+        class="yakker-img"
+      />
+    </div>
+
+    <!-- Research section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-bold">Research</h1>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Kickoff</h2>
+            <p>
+              As a solo designer and developer for this project, I began by
+              defining clear goals for Yakker: to create a lightweight,
+              anonymous social media platform inspired by Twitter, but without
+              the pressure of personal branding. I conducted a competitive audit
+              of popular platforms, documenting early assumptions and
+              identifying critical research questions to guide the build.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Competitive Analysis</h2>
+            <p>
+              I examined onboarding and interaction patterns across platforms
+              like Twitter, Threads, and Reddit. A key insight was that users
+              often drop off during lengthy sign-up flows. Yakker’s approach
+              prioritizes minimal friction by allowing immediate posting after
+              sign-up.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Target Users & Privacy</h2>
+            <p>
+              Yakker is aimed at users who want to post freely without being
+              tied to their identity — including students, professionals, and
+              casual users. I also considered the importance of limiting
+              personal data collection, keeping privacy and safety top of mind.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Key Insights</h2>
+            <ul>
+              <li>
+                Users are more likely to engage when onboarding is simple and
+                non-invasive
+              </li>
+              <li>Removing popularity metrics encourages authentic content</li>
+              <li>Anonymity boosts posting frequency but needs moderation</li>
+              <li>Transparency around data collection builds trust</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ideation and user stories -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Ideation</h1>
+        <h2 class="fw-bold">User Stories</h2>
+        <p>
+          For the user stories, I have split them up depending on the user
+          action:
+        </p>
+
+        <h4 class="mt-5">Authentication</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Log In</td>
+                <td>
+                  As a user I can easily log in so that I can quickly post, add
+                  more comments, or delete content if I wish.
+                </td>
+              </tr>
+              <tr>
+                <td>Log Out</td>
+                <td>
+                  As a user I can easily log out so that I can have more
+                  security on my account.
+                </td>
+              </tr>
+              <tr>
+                <td>Sign Up</td>
+                <td>
+                  As a user I can sign up easily with just a username and
+                  password so that I have the ability to create posts or
+                  comments without having to share my email address.
+                </td>
+              </tr>
+              <tr>
+                <td>Permissions</td>
+                <td>
+                  As a user I cannot edit/delete posts/comments/likes that are
+                  not mine so that I can be assured that my posts/comments/likes
+                  are protected and can only be changed by me.
+                </td>
+              </tr>
+              <tr>
+                <td>Like Rules</td>
+                <td>
+                  As a user I can only like/unlike other users' posts and
+                  comments so that I can only show appreciation and not cheat
+                  the system.
+                </td>
+              </tr>
+              <tr>
+                <td>Follow Rules</td>
+                <td>
+                  As a user I can only follow other users so that I cannot cheat
+                  the system and follow myself.
+                </td>
+              </tr>
+              <tr>
+                <td>Login Status</td>
+                <td>
+                  As a user I can see whether I am logged in or not so that I
+                  will know if I need to log in.
+                </td>
+              </tr>
+              <tr>
+                <td>Session Persistence</td>
+                <td>
+                  As a user I can stay logged in so I don’t have to keep signing
+                  in unless I manually log out.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Posts -->
+        <h4 class="mt-5">Posts</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Create</td>
+                <td>
+                  As a user I can create new posts so that I can share images,
+                  my thoughts, or what I'm doing.
+                </td>
+              </tr>
+              <tr>
+                <td>Edit</td>
+                <td>
+                  As a user I can edit posts so that I can update them if I
+                  change my mind.
+                </td>
+              </tr>
+              <tr>
+                <td>Delete</td>
+                <td>
+                  As a user I can delete my posts so that I can remove content I
+                  no longer want to share.
+                </td>
+              </tr>
+              <tr>
+                <td>Details</td>
+                <td>
+                  As a user I can view post details including time, creator, and
+                  comments.
+                </td>
+              </tr>
+              <tr>
+                <td>Like</td>
+                <td>As a user I can like posts to show appreciation.</td>
+              </tr>
+              <tr>
+                <td>Unlike</td>
+                <td>As a user I can remove likes if I change my mind.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Comments -->
+        <h4 class="mt-5">Comments</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Create</td>
+                <td>
+                  As a user I can post a comment on a post to contribute
+                  discussion.
+                </td>
+              </tr>
+              <tr>
+                <td>Delete</td>
+                <td>
+                  As a user I can delete my comments on a post to remove them if
+                  I wish.
+                </td>
+              </tr>
+              <tr>
+                <td>Read</td>
+                <td>
+                  As a user I can read comments on a post to see what others are
+                  saying.
+                </td>
+              </tr>
+              <tr>
+                <td>Edit</td>
+                <td>As a user I can edit my comments to refine them later.</td>
+              </tr>
+              <tr>
+                <td>Like</td>
+                <td>As a user I can like comments to show appreciation.</td>
+              </tr>
+              <tr>
+                <td>Unlike</td>
+                <td>As a user I can unlike comments to change my mind.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Navigation -->
+        <h4 class="mt-5">Navigation</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nav Bar</td>
+                <td>
+                  As a user I can see the navigation bar at the top of every
+                  page so that I can easily navigate.
+                </td>
+              </tr>
+              <tr>
+                <td>Page Speed</td>
+                <td>
+                  As a user I can navigate between pages quickly without full
+                  reloads.
+                </td>
+              </tr>
+              <tr>
+                <td>404 Page</td>
+                <td>
+                  As a user I can see a styled 404 page if I land on an invalid
+                  URL.
+                </td>
+              </tr>
+              <tr>
+                <td>500 Page</td>
+                <td>
+                  As a user I can see a consistent 500 error page for backend
+                  issues.
+                </td>
+              </tr>
+              <tr>
+                <td>Inf. Scroll</td>
+                <td>
+                  As a user I can infinitely scroll down to see more posts and
+                  comments without clicking extra links.
+                </td>
+              </tr>
+              <tr>
+                <td>Conditional Nav</td>
+                <td>
+                  As a user I see login/signup links when logged out, and
+                  profile/post links when logged in.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Profile -->
+        <h4 class="mt-5">Profile</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Avatars</td>
+                <td>
+                  As a user I can view user avatars to visually identify them.
+                </td>
+              </tr>
+              <tr>
+                <td>User Profiles</td>
+                <td>
+                  As a user I can view detailed pages for users showing their
+                  posts and stats.
+                </td>
+              </tr>
+              <tr>
+                <td>Follow/Unfollow</td>
+                <td>
+                  As a user I can follow or unfollow users to customize my feed.
+                </td>
+              </tr>
+              <tr>
+                <td>Popular Users</td>
+                <td>
+                  As a user I can see the most followed profiles to find
+                  trending accounts.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- General -->
+        <h4 class="mt-5">General</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered user-table">
+            <thead>
+              <tr>
+                <th style="width: 30%">Feature</th>
+                <th>User Story</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Search</td>
+                <td>
+                  As a user I can search for posts or users to quickly find what
+                  I'm looking for.
+                </td>
+              </tr>
+              <tr>
+                <td>About Page</td>
+                <td>
+                  As a user I can easily find the 'About' link in the nav to
+                  learn about the platform’s purpose.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-5">Design</h1>
+        <div class="pb-5">
+          <h2 class="fw-bold">Wireframes</h2>
+          <p>
+            In the early stages of the design process, I adopted a mobile-first
+            approach by sketching out key screens on paper. This allowed me to
+            quickly visualize core user flows and focus on content hierarchy,
+            clarity, and essential interactions. After solidifying the basic
+            structure, I translated these sketches into digital low-fidelity
+            wireframes using Balsamiq. These wireframes helped define layout and
+            user flow while keeping the visuals intentionally minimal. Since the
+            primary goal of this project was to deepen my development skills, I
+            chose to move directly into development after the low-fidelity
+            stage. I used the wireframes as a functional blueprint to guide the
+            front-end build and ensure that the app’s key features, posting,
+            following users, and engaging anonymously, were implemented with a
+            clear and consistent structure. While I didn’t create high-fidelity
+            mockups, I continuously refined UI components during development to
+            balance usability with simplicity.
+          </p>
+        </div>
+
+        <!-- 1. Paper Wireframes -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Paper Wireframes</h4>
+            <p>
+              I began with hand-drawn wireframes to quickly explore layout and
+              flow options without committing to visuals. This helped me rapidly
+              ideate and sketch out key screens such as the homepage, user feed,
+              and post interaction views.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/yakker/yakker_wireframe.jpg"
+              alt="Paper wireframes"
+              class="img-fluid rounded shadow-sm"
+            />
+          </div>
+        </div>
+
+        <!-- 2. Low-Fidelity Mobile Wireframes -->
+        <div class="row align-items-center flex-md-row-reverse mb-5">
+          <div class="col-md-6">
+            <h4>Low-Fidelity Wireframes: Mobile</h4>
+            <p>
+              After validating core flows, I moved into digital low-fidelity
+              wireframes using Balsamiq. I quickly visualized the layout of the
+              social feed, creating posts, commenting on other user's posts, and
+              the user's profile page, ensuring all user needs are met.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/yakker/yakker-mobilefeed.png"
+              alt="Low fidelity wireframes"
+              class="img-fluid rounded"
+            />
+            <img
+              src="../assets/images/projects/yakker/yakker-mobilecreate.png"
+              alt="Low fidelity wireframes"
+              class="img-fluid rounded"
+            />
+            <img
+              src="../assets/images/projects/yakker/yakker-mobilecomment.png"
+              alt="Low fidelity wireframes"
+              class="img-fluid rounded"
+            />
+            <img
+              src="../assets/images/projects/yakker/yakker-mobileprofile.png"
+              alt="Low fidelity wireframes"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+
+        <!-- 3.Low-Fid Desktop Wireframes -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Low-Fidelity Wireframes: Desktop</h4>
+            <p>
+              To refine the layout for desktop screens, I transitioned into the
+              digital wireframes for desktop, introducing more accurate sizing
+              and key UI components. This phase focused on improving clarity in
+              post layout, profile summaries, and feed structure.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <img
+                  src="../assets/images/projects/yakker/yakker-desktopfeed.png"
+                  alt="Low fidelity wireframes"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="../assets/images/projects/yakker/yakker-desktopcreate.png"
+                  alt="Low fidelity wireframes"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="../assets/images/projects/yakker/yakker-desktopfeed.png"
+                  alt="Low fidelity wireframes"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="../assets/images/projects/yakker/yakker-desktopprofile.png"
+                  alt="Low fidelity wireframes"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-5">
+          <h2 class="fw-bold">Style Guide</h2>
+          <p>
+            The style guide for Yakker is designed to create a fun, modern, and
+            readable user experience that reflects the platform’s casual and
+            community-driven vibe. It features two primary fonts sourced from
+            Google Fonts: <strong>Fredoka One</strong>, a playful and bold
+            cursive used for headers, post titles, and navigation to establish a
+            clear visual hierarchy; and <strong>Raleway</strong>, a clean and
+            simple sans-serif chosen for body text and longer content to
+            maximize readability.
+          </p>
+        </div>
+
+        <!-- 1. Logo -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Logo</h4>
+            <p>
+              The logo was created using Logo.com. The goal was to feature a
+              fun, cartoon illustration of a yak to nicely tie the platform name
+              and logo together.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/yakker/yakker-logo.png"
+              alt="Yakker Logo"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+
+        <!-- 2. Colour Palette -->
+        <div class="row align-items-center flex-md-row-reverse mb-5">
+          <div class="col-md-6">
+            <h4>Colour Palette</h4>
+            <p>
+              The color palette, inspired by a scheme developed by Logo.com,
+              strategically uses a primary color for most text, a secondary
+              color to highlight interactive elements like links and buttons on
+              hover, and an accent color to emphasize key details such as
+              usernames and active navigation links. Together, these choices
+              ensure a cohesive and approachable aesthetic that supports
+              Yakker’s goal of fostering open, low-pressure social interaction.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/yakker/yakker-colours.png"
+              alt="Low fidelity wireframes"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Usability Testing</h1>
+        <p>Usability testing findings</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Handoff</h1>
+        <p>
+          Explain your developer handoff process, documentation, or design
+          system.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Reflection</h1>
+        <p>
+          What you learned, what you’d improve, and your personal takeaways from
+          the project.
+        </p>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/2747d9050d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- local JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
