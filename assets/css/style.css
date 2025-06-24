@@ -252,10 +252,25 @@ ul {
   color: #5a5a5a !important;
 }
 
-/* PROJECTS - YAKKER */
+/* PROJECTS */
+
+.portfolio-link {
+  color: black;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+  color: black;
+}
 
 .yakker-hero {
   background-color: #e4e9ee;
+  padding: 5rem 1rem;
+}
+
+.corkpaints-hero {
+  background-color: #f4f1f6;
   padding: 5rem 1rem;
 }
 
@@ -264,7 +279,7 @@ ul {
   font-weight: bold;
 }
 
-.yakker-img {
+.project-img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -324,6 +339,11 @@ ul {
   width: 100%;
 }
 
+.img-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 1080px) {
@@ -362,6 +382,7 @@ ul {
 @media (max-width: 800px) {
   .homepage-portfolio .grid-container {
     grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 5%;
   }
 }
 
@@ -373,6 +394,10 @@ ul {
 
   .gallery {
     column-count: 2;
+  }
+
+  .summary-section {
+    padding: 2%;
   }
 }
 
