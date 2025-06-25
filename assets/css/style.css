@@ -19,7 +19,8 @@ h3,
 h3,
 h4,
 h5,
-p {
+p,
+li {
   color: #5a5a5a;
 }
 
@@ -277,14 +278,20 @@ ul {
   color: black;
 }
 
+.project-hero {
+  padding: 8rem 1rem;
+}
+
 .yakker-hero {
   background-color: #e4e9ee;
-  padding: 8rem 1rem;
 }
 
 .corkpaints-hero {
   background-color: #f4f1f6;
-  padding: 8rem 1rem;
+}
+
+.memorygame-hero {
+  background-color: #e0e2db;
 }
 
 .yakker-hero h1 {
