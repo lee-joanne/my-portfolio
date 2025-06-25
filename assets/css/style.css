@@ -282,6 +282,11 @@ ul {
   padding: 8rem 1rem;
 }
 
+.project-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .yakker-hero {
   background-color: #e4e9ee;
 }
@@ -292,11 +297,6 @@ ul {
 
 .memorygame-hero {
   background-color: #e0e2db;
-}
-
-.yakker-hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .project-img {
