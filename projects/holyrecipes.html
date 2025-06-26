@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UI/UX Designer & Full Stack Developer portfolio website."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- local CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/favicon.png" />
+
+    <title>Joanne Lee - Portfolio</title>
+  </head>
+
+  <body style="padding-top: 0">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="../index.html"
+          aria-label="Returns to homepage (projects page)"
+        >
+          <img
+            id="navbar-logo"
+            src="../assets/images/logo-transp.png"
+            alt="image of a rabbit"
+            width="65"
+            height="65"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link text-dark"
+              href="../index.html"
+              aria-label="Homepage (projects page) of portfolio website"
+              >Home</a
+            >
+
+            <a
+              class="nav-link text-dark"
+              href="../about.html"
+              aria-label="View details about me"
+              >About</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="yakker.html"
+                    aria-label="Jumps to Yakker case study"
+                    >Yakker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    href="holyrecipes.html"
+                    aria-label="Jumps to HolyRecipes case study"
+                    >HolyRecipes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="corkpaints.html"
+                    aria-label="Jumps to Cork Paints case study"
+                    >Cork Paints</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="memorygame.html"
+                    aria-label="Jumps to Memory Game case study"
+                    >Memory Game</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="geoquiz.html"
+                    aria-label="Jumps to Geo Quiz case study"
+                    >Geo Quiz</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="nav-link text-dark"
+              href="../contactme.html"
+              aria-label="Clicking this will go to contact me page"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- project heading  -->
+    <section class="holyrecipes-hero project-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <h1 class="pt-4 fw-bold">HolyRecipes</h1>
+            <h3 class="text-muted">
+              A festive recipe site allowing users to search for
+              Christmas-themed dishes via a built-in recipe API.
+            </h3>
+
+            <h3 class="text-muted fw-bold">
+              Awarded second place in Code Institute's 2023 Christmas Hackathon.
+            </h3>
+            <p>
+              <a
+                class="portfolio-link"
+                href="https://xttrust.github.io/HolyRecipes/"
+                target="_blank"
+                aria-label="Opens HolyRecipes live link page (in a new tab)"
+                >Deployed Link</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/holyrecipes/holyrecipes.webp"
+              alt="HolyRecipes on multiple devices"
+              class="project-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- problem statement and solution -->
+    <section class="case-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Problem</h2>
+            <p>
+              The holiday season is a time for sharing meals and creating
+              festive memories, yet users often struggle to find
+              Christmas-themed recipe websites that are both interactive and
+              diverse in content. Many existing sites offer limited seasonal
+              options, static content, or overwhelming user interfaces that make
+              it hard to stay engaged or inspired. As part of Code Institute's
+              2023 Christmas Hackathon, the challenge was to design and develop
+              a digital solution that allows users to explore a variety of
+              festive recipes with ease, interactivity, and a touch of seasonal
+              magic.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold">Solution</h2>
+            <p>
+              To address this challenge, I collaborated with a team of six to
+              design and develop HolyRecipes, an intuitive, user-friendly
+              Christmas recipe website built with <strong>HTML</strong>,
+              <strong>CSS</strong>, and <strong>JavaScript</strong>. Our goal
+              was to create a festive, interactive platform where users could
+              easily browse a wide variety of Christmas-themed dishes and search
+              by category or ingredients with a built-in API. The site features
+              a clean, accessible UI, dynamic filtering, and clear recipe
+              presentation that encourages exploration without overwhelming the
+              user.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- role and tools -->
+    <section class="case-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">My Role</h5>
+            <p>UX Designer, Full Stack Developer</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Tools</h5>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Timeline</h5>
+            <p>3 Days</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Process</h5>
+            <p>
+              User Stories, Wireframes, Style Guide, Development, Reflections
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sample prototype section -->
+    <div class="text-center bg-light prototype py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/holyrecipes/desktop-homepage.webp"
+              alt="HolyRecipes main homepage"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/holyrecipes/desktop-recipesection1.webp"
+              alt="Holyrecipes featured ingredients section"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/holyrecipes/desktop-recipesection.webp"
+              alt="HolyRecipes classic recipe section"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/holyrecipes/desktop-contactpage.webp"
+              alt="HolyRecipes contact page"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- research section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-bold">Research</h1>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Kickoff</h2>
+            <p>
+              Our team of six had just three days to bring HolyRecipes to life
+              as part of Code Institute’s Christmas Hackathon. We began with a
+              collaborative kickoff call where we brainstormed ideas, discussed
+              user needs based on the problem statement, and ideated potential
+              design and technical solutions. Embracing Agile methods, we
+              quickly organized our workflow using a shared Kanban board to
+              break the project into manageable tasks. This allowed us to move
+              efficiently from ideation to implementation, assigning roles,
+              setting daily check-ins, and maintaining flexibility as we built
+              the core features of the site. Our goal was to combine creativity
+              and usability in a festive, functional recipe platform tailored to
+              the holiday season.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Competitive Analysis</h2>
+            <p>
+              As part of the research phase, we conducted a competitive analysis
+              of popular recipe websites such as AllRecipes, BBC Good Food, and
+              Tasty. While these platforms offer extensive collections of
+              recipes, they tend to lack a strong focus on seasonal or
+              holiday-specific content, often requiring users to sift through
+              unrelated results. Many also prioritize quantity over user
+              experience, featuring cluttered layouts, pop-up ads, and complex
+              navigation. We noticed a gap in the market for a festive, focused,
+              and user-friendly platform dedicated entirely to Christmas
+              recipes. HolyRecipes was designed to fill that space by combining
+              a curated collection of holiday dishes with a clean interface and
+              intuitive browsing experience.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Target Users & Accessibility</h2>
+            <p>
+              HolyRecipes is built to be an all-in-one platform for anyone
+              looking to bring festive cheer into their kitchen, whether they’re
+              beginners searching for their first Christmas cookie recipe or
+              seasoned cooks planning an elaborate holiday feast. With a
+              built-in recipe API, users can instantly search and explore a wide
+              variety of Christmas dishes with just a click, removing the need
+              to visit multiple sites or filter through irrelevant results. The
+              platform caters to busy users who want quick inspiration, as well
+              as those who enjoy browsing and planning meals. Designed with
+              accessibility in mind, HolyRecipes features a responsive layout,
+              semantic HTML, clear navigation, and strong colour contrast,
+              making it easy to use across all devices and for users of all
+              abilities. No sign-ups or technical barriers required.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Key Insights</h2>
+            <ul>
+              <li>
+                Users are more likely to engage with recipe content when it's
+                instantly searchable and visually appealing.
+              </li>
+              <li>
+                Holiday chefs appreciate curated, seasonal content over generic,
+                year-round recipes.
+              </li>
+              <li>
+                Removing sign-up requirements lowers friction and encourages
+                spontaneous browsing.
+              </li>
+              <li>
+                A clean, festive interface builds trust and enhances the overall
+                holiday experience.
+              </li>
+              <li>
+                Mobile accessibility is crucial, as many users cook directly
+                from their phones or tablets.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ideation and user stories -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Ideation</h1>
+        <h2 class="fw-bold">User Stories</h2>
+        <p>
+          Creating user stories helped us focus on real user needs and guided
+          the human-centred design process.
+        </p>
+
+        <div class="container">
+          <h4 class="mb-4">First Time Visitor Goals</h4>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              As a first time visitor, I want to quickly find Christmas recipes
+              so I can get inspired for the holidays.
+            </li>
+            <li class="list-group-item">
+              As a first time visitor, I want a simple, clutter-free interface
+              so I’m not overwhelmed by too many options.
+            </li>
+            <li class="list-group-item">
+              As a first time visitor, I want clear filters (by course type,
+              cooking time, or dietary needs) so I can easily narrow down
+              recipes.
+            </li>
+          </ul>
+
+          <h4 class="mb-4">Returning Visitor Goals</h4>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              As a returning visitor, I want to browse newly added or trending
+              Christmas recipes to keep my holiday menu fresh and exciting.
+            </li>
+            <li class="list-group-item">
+              As a returning visitor, I want detailed recipe instructions with
+              ingredient lists and cooking tips so I can cook confidently.
+            </li>
+          </ul>
+
+          <h4 class="mb-4">Busy User Goals</h4>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              As a busy user, I want quick and easy holiday recipes so I can
+              prepare a festive meal even with limited time.
+            </li>
+            <li class="list-group-item">
+              As a busy user, I want to filter recipes by preparation time so I
+              can choose dishes that fit my schedule.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- design section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-5">Design</h1>
+        <div class="pb-5">
+          <h2 class="fw-bold">Wireframes</h2>
+          <p>
+            For the hackathon, I took on the role of wireframer for the team.
+            Given the tight three-day deadline, I focused on quickly sketching
+            paper wireframes to map out key screens and user flows. This rapid,
+            low-fidelity approach allowed me to visualize the site’s structure
+            and core features without getting bogged down in details. I
+            presented these sketches to the team early on to gather feedback and
+            iterate the design, ensuring alignment before development began.
+            This efficient process helped us maintain momentum and build a
+            functional, user-friendly application within the limited timeframe.
+          </p>
+        </div>
+
+        <!-- 1. paper wireframes -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Paper Wireframes</h4>
+            <p>
+              I began with hand-drawn wireframes to rapidly explore layout and
+              user flow options without getting tied down to visual details.
+              This allowed me to quickly ideate and sketch key screens including
+              the homepage, popular recipes section, an ‘About Us’ page to build
+              user trust, the recipe search powered by the API, and a contact
+              page. These sketches provided a clear blueprint for the site’s
+              structure and prioritized user needs, enabling swift team feedback
+              and iteration before moving into development.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/holyrecipes/holyrecipe_wireframe.webp"
+              alt="Paper wireframes"
+              class="img-fluid shadow-sm"
+            />
+          </div>
+        </div>
+
+        <!-- style guide  -->
+        <div class="pb-5">
+          <h2 class="fw-bold">Style Guide</h2>
+          <p>
+            The style guide establishes the visual identity and ensures
+            consistency across the site. The primary font,
+            <strong>Kalnia</strong>, was chosen for its decorative serif style
+            that conveys a festive, holiday feel distinct from typical web
+            fonts, aligning with seasonal design trends. Complementing this, the
+            secondary font, <strong>Poppins</strong>, provides clean readability
+            and a professional tone that builds user trust in the content. The
+            colour scheme draws from classic Christmas colours, using vibrant
+            greens for main navigation elements and festive reds for interactive
+            states like button hovers. Softer green tones highlight link
+            interactions, ensuring clear visual feedback. Together, these
+            choices create an inviting, accessible, and coherent design language
+            throughout the platform.
+          </p>
+        </div>
+
+        <!-- 1. logo -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Logo</h4>
+            <p>
+              The logo, created using Logo.com, was designed to convey a
+              friendly and cheerful tone that welcomes users warmly.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/holyrecipes/holyrecipes-logo.webp"
+              alt="HolyRecipes logo"
+              class="img-fluid w-50"
+            />
+          </div>
+        </div>
+
+        <!-- 2. colour palette -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Colour Palette</h4>
+            <p>
+              The colour palette draws from traditional holiday hues to create
+              an instantly recognizable festive atmosphere. The primary colour
+              is Christmas tree green, featured prominently in the main
+              navigation areas like the navbar, footer, and action buttons.
+              Santa red serves as the secondary colour, used especially as a
+              button hover effect to signal interactivity. Yellow accents add
+              warmth and highlight decorative elements throughout the site,
+              enhancing the cheerful and vibrant holiday feel.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/holyrecipes/holyrecipes-colourpalette.webp"
+              alt="Colour palette of HolyRecipes"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!-- final product  -->
+        <div class="pb-5">
+          <h2 class="fw-bold">Final Product</h2>
+          <p>
+            Our team successfully completed an inclusive, fully responsive
+            design within the three-day hackathon timeframe. The website
+            features vibrant colours and festive imagery, with highlighted
+            recipes showcased on the homepage alongside popular dishes. The
+            About page shares family traditions and introduces users to the
+            creators, fostering trust and connection. A dedicated Contact page
+            allows users to easily send queries. The site’s powerful search
+            functionality leverages a built-in API, enabling users to find
+            recipes by name, category, or dietary restrictions quickly and
+            intuitively. After finalizing the project, we presented our work to
+            the judges and were honoured to receive second place for our
+            efforts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- prototype gallery section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/holyrecipes/mobile-homepage.webp"
+                alt="HolyRecipes homepage"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/holyrecipes/mobilefeaturedrecipe.webp"
+                alt="HolyRecipes featured recipe"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/holyrecipes/mobilenavbar.webp"
+                alt="HolyRecipes navigation bar "
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/holyrecipes/mobilecontact.webp"
+                alt="HolyRecipes contact page"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/holyrecipes/mobilerecipefinder.webp"
+                alt="HolyRecipes recipe finder"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- handoff section  -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Handoff</h1>
+
+        <div class="row g-4 mt-4">
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Languages & Libraries</h2>
+              <ul class="ps-3 mb-0">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Google Fonts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Developer Handoff</h2>
+              <p class="mb-0">
+                As a team, we ensured a smooth handoff by maintaining clear
+                communication and collaboration throughout the project. We held
+                daily calls to coordinate progress and address any challenges,
+                while using a Kanban board to clearly separate and track
+                individual tasks. This organized approach helped us stay aligned
+                and efficiently share responsibilities. Each member contributed
+                equally, and we maintained well-structured, reusable code to
+                promote consistency. Our use of version control with Git and
+                GitHub enabled seamless collaboration and easy tracking of
+                changes, ensuring the project could be easily updated or handed
+                off in the future.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Tools & Programs</h2>
+              <ul class="ps-3 mb-0">
+                <li>Git & GitHub for deployment and version control</li>
+                <li>Logo.com</li>
+                <li>W3C CSS Validator</li>
+                <li>Font Awesome</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Testing & QA</h2>
+              <p class="mb-0">
+                Testing and quality assurance were a shared responsibility
+                across the team. We all manually tested the site on a variety of
+                devices, including phones, tablets, and desktops, to ensure
+                consistent responsiveness and functionality. Navigation was
+                carefully reviewed to confirm that it worked intuitively across
+                screen sizes, and recipe searches were tested thoroughly to
+                ensure accurate results. We also validated form inputs and
+                interactions to make sure the user experience was smooth and
+                error-free. This hands-on, collaborative approach helped us
+                catch minor bugs early and deliver a polished, reliable final
+                product.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reflection  -->
+    <section class="case-section" style="padding-bottom: 4rem">
+      <div class="container">
+        <h1 class="fw-bold text-center">Reflection</h1>
+        <p>
+          This was my first project where I worked collaboratively within a team
+          under a tight three-day deadline. While the pace was challenging, the
+          experience was incredibly rewarding, especially as our project earned
+          second place in the hackathon. Collaborating with others allowed us to
+          bounce ideas off one another, share responsibilities, and push the
+          project further than any one of us could have done alone. I also came
+          to appreciate the unique benefits of both solo and team work:
+          individual projects allow for deeper focus and creative control, while
+          team efforts encourage fresh perspectives, faster iteration, and
+          shared learning. Overall, this project taught me the value of
+          collaboration, time management, and trusting in the strengths of the
+          people around you.
+        </p>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/2747d9050d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- local JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
