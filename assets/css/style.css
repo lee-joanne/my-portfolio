@@ -82,7 +82,7 @@ ul {
   }
 }
 
-.hero-text {
+.index-animate {
   opacity: 0;
   animation: fadeIn 1.3s ease-in forwards;
 }
@@ -406,7 +406,7 @@ ul {
 @media (max-width: 800px) {
   .homepage-portfolio .grid-container {
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
 }
 
