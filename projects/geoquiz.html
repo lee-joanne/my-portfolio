@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UI/UX Designer & Full Stack Developer portfolio website."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- local CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/favicon.png" />
+
+    <title>Joanne Lee - Portfolio</title>
+  </head>
+
+  <body style="padding-top: 0">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand bg-transparent fixed-top mb-2" id="navbar">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="../index.html"
+          aria-label="Returns to homepage (projects page)"
+        >
+          <img
+            id="navbar-logo"
+            src="../assets/images/logo-transp.png"
+            alt="image of a rabbit"
+            width="65"
+            height="65"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link text-dark"
+              href="../index.html"
+              aria-label="Homepage (projects page) of portfolio website"
+              >Home</a
+            >
+
+            <a
+              class="nav-link text-dark"
+              href="../about.html"
+              aria-label="View details about me"
+              >About</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="yakker.html"
+                    aria-label="Jumps to Yakker case study"
+                    >Yakker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="corkpaints.html"
+                    aria-label="Jumps to Cork Paints case study"
+                    >Cork Paints</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="memorygame.html"
+                    aria-label="Jumps to Memory Game case study"
+                    >Memory Game</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    href="geoquiz.html"
+                    aria-label="Jumps to Geo Quiz case study"
+                    >Geo Quiz</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="nav-link text-dark"
+              href="../contactme.html"
+              aria-label="Clicking this will go to contact me page"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- memory game heading  -->
+    <section class="geoquiz-hero project-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <h1 class="pt-4 fw-bold">Geo Quiz</h1>
+            <h3 class="text-muted">
+              A fun and interactive geography-based quiz game.
+            </h3>
+            <p>
+              <a
+                class="portfolio-link"
+                href="https://lee-joanne.github.io/geo-quiz/"
+                target="_blank"
+                aria-label="Opens Memory Game live link page (in a new tab)"
+                >Deployed Link</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-img.webp"
+              alt="Memory Game on multiple devices"
+              class="project-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- problem statement and solution -->
+    <section class="case-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Problem</h2>
+            <p>
+              Many JavaScript-based games, especially those targeting beginners,
+              tend to suffer from buggy functionality, lack of proper error
+              handling, and poorly structured code. Additionally, they often
+              fail to implement progressive difficulty, which can lead to user
+              boredom and reduced engagement over time. There's a clear need for
+              a well-built, scalable and simple game that not only provides an
+              engaging and educational experience, but also follows modern
+              JavaScript best practices, including clean code, thoughtful error
+              handling, and a difficulty curve that keeps players challenged and
+              motivated.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold">Solution</h2>
+            <p>
+              To address the common issues of unreliable code and stagnant
+              difficulty in JavaScript games, I built a geography-based game,
+              called Geo Quiz, using <strong>HTML</strong>,
+              <strong>CSS</strong>, and <strong>JavaScript</strong>. The game
+              was designed to scale in difficulty as users progress, maintaining
+              engagement while testing their geography knowledge. I implemented
+              thorough error handling and followed front-end best practices to
+              ensure clean, maintainable code. To validate its performance and
+              user experience, I conducted both usability testing and manual
+              testing, using real feedback to refine the interface, logic, and
+              overall gameplay for a smooth and enjoyable experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- role and tools -->
+    <section class="case-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">My Role</h5>
+            <p>UX Designer, Full Stack Developer</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Tools</h5>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Timeline</h5>
+            <p>2 Weeks</p>
+          </div>
+          <div class="col-md-3 summary-section">
+            <h5 class="fw-bold">Process</h5>
+            <p>
+              User Stories, Paper Wireframes, Style Guide, Usability Testing,
+              Development, Reflections
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sample prototype section -->
+    <div class="text-center bg-light prototype py-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-homepage-desktop.webp"
+              alt="Geo Quiz homepage desktop"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-info-desktop.webp"
+              alt="Geo Quiz info desktop"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 mb-4">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-gameplay-desktop.webp"
+              alt="Geo Quiz gameplay desktop"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- research section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-bold">Research</h1>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h2 class="fw-bold">Kickoff</h2>
+            <p>
+              As a solo designer and developer, Geo Quiz was my first ever
+              JavaScript project. It required a great deal of practice,
+              learning, and discipline to develop the skills necessary to
+              integrate JavaScript functionality with HTML and CSS. I chose to
+              create a geography-based quiz because it’s a universally relatable
+              topic. People from around the world can engage with general
+              geography questions, making the game widely accessible. This
+              project was not only a milestone in my JavaScript journey but also
+              a chance to build something educational, interactive, and globally
+              relevant while honing my front-end development skills.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Competitive Analysis</h2>
+            <p>
+              For the competitive analysis of Geo Quiz, I reviewed a range of
+              beginner-friendly JavaScript quiz games. While many were creative,
+              they often lacked proper error handling, had minimal difficulty
+              progression, or included bugs due to weak game logic. I also
+              noticed that many were themed around niche topics like TV shows or
+              pop culture, which can limit their appeal. To ensure broader
+              accessibility, I chose a geography-based theme, which is something
+              universally relatable, and focused on building a clean, reliable
+              game that offers a smooth, engaging experience for all users.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Target Users & Accessibility</h2>
+            <p>
+              Geo Quiz is designed for all users, from casual players and
+              beginners to those looking for a quick, fun challenge.
+              Accessibility and simplicity were key priorities throughout
+              development. The game is fully responsive for both desktop and
+              mobile devices, ensuring a smooth experience across screen sizes.
+              Clear feedback is provided after each question to let users know
+              if their answer was correct or not, along with the correct answer
+              when needed. Proper error handling was implemented to ensure the
+              game communicates effectively with users, creating an intuitive
+              and frustration-free experience that encourages continued play.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="fw-bold">Key Insights</h2>
+            <ul>
+              <li>
+                Clear feedback on answers improves engagement and supports
+                learning.
+              </li>
+              <li>Gradual difficulty keeps users challenged and motivated.</li>
+              <li>Mobile responsiveness is key for accessibility and reach.</li>
+              <li>
+                Simple design and broad content appeal to a global audience.
+              </li>
+              <li>
+                Strong error handling ensures stability and prevents confusion.
+              </li>
+              <li>
+                Shuffling the questions for each new game inhibits the users
+                from memorizing the correct answers in order.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ideation and user stories -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Ideation</h1>
+        <h2 class="fw-bold">User Stories</h2>
+        <p>
+          Developing user stories guided the design process by focusing on the
+          users’ needs through human-centred design thinking.
+        </p>
+        <div class="container">
+          <h4 class="mb-4">First-Time Player Goals</h4>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              As a first-time user, I want to immediately understand the game’s
+              purpose so I know it’s a geography quiz testing my knowledge.
+            </li>
+            <li class="list-group-item">
+              As a first-time user, I want clear instructions on how to play and
+              the scoring system, so I know how to progress through levels.
+            </li>
+            <li class="list-group-item">
+              As a first-time user, I want the instructions to be easy to read
+              and well-organized, so I can quickly grasp the rules.
+            </li>
+            <li class="list-group-item">
+              As a first-time user, I want the website to be visually clear and
+              easy to navigate, with prominent buttons and intuitive icons.
+            </li>
+            <li class="list-group-item">
+              As a first-time user, I want to see my score update in real-time
+              and receive feedback on my answers, including the correct answers
+              when I’m wrong.
+            </li>
+            <li class="list-group-item">
+              As a first-time user, I want to know when I’ve passed or failed a
+              level, so I can track my progress.
+            </li>
+          </ul>
+
+          <h4 class="mb-4">Returning/Frequent Player Goals</h4>
+          <ul class="list-group mb-5">
+            <li class="list-group-item">
+              As a returning user, I want to restart the game with a fresh score
+              and reshuffled questions to keep it challenging.
+            </li>
+            <li class="list-group-item">
+              As a returning user, I want an easy way to replay the game from
+              the game over or completion screen.
+            </li>
+            <li class="list-group-item">
+              As a returning user, I want to access social media links to
+              connect with the creator or stay updated without leaving the game
+              site.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- design section -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-5">Design</h1>
+        <div class="pb-5">
+          <h2 class="fw-bold">Wireframes</h2>
+          <p>
+            For this project, I chose to start with paper wireframes to maintain
+            focus on designing a clear and intuitive user flow. This hands-on
+            method allowed me to thoughtfully plan error handling and user
+            interactions early on, helping to ensure a smooth and
+            frustration-free experience before beginning development.
+          </p>
+        </div>
+
+        <!-- 1. paper wireframes -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Paper Wireframes</h4>
+            <p>
+              I started with hand-drawn wireframes to map out layout and user
+              flow concepts without focusing on detailed visuals. This approach
+              allowed me to quickly brainstorm and sketch essential screens like
+              the homepage, how instructions will be portrayed to the user, the
+              game layout, and how the buttons will be interacted.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz_wireframe.webp"
+              alt="Paper wireframes"
+              class="img-fluid shadow-sm"
+            />
+          </div>
+        </div>
+
+        <!-- style guide  -->
+        <div class="pb-5">
+          <h2 class="fw-bold">Style Guide</h2>
+          <p>
+            The style guide uses a harmonious palette of blues, white, and black
+            to create a calm, accessible look that fits the geography theme.
+            Blue shades highlight buttons and containers, while white text
+            ensures readability. Black accents enhance clarity for icons and
+            controls. The typography features <strong>Dosis</strong>, a playful
+            and readable rounded sans-serif font that suits the game’s friendly
+            vibe. The background image of blue skies and Greek architecture
+            supports the theme and keeps the layout clean and inviting.
+          </p>
+        </div>
+
+        <!-- 1. logo -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Logo</h4>
+            <p>
+              The logo and favicon were taken from Favicon.io. The logo consists
+              of a globe to match the geography-based theme of the game.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-logo.png"
+              alt="Totoro image used as favicon"
+              class="img-fluid w-25"
+            />
+          </div>
+        </div>
+
+        <!-- 2. colour palette -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h4>Colour Palette</h4>
+            <p>
+              The colour palette for Geo Quiz features calming blues inspired by
+              the background image of Greece, with lighter blue used for main
+              containers and buttons, and darker blue to highlight key actions.
+              White text ensures readability and accessibility, while some black
+              accents emphasize interactive elements. This combination creates a
+              clear, inviting, and user-friendly interface that fits the
+              geography theme.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="../assets/images/projects/geoquiz/geoquiz-palette.webp"
+              alt="Colour palette of Memory Game"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!-- final product  -->
+        <div class="pb-5">
+          <h2 class="fw-bold">Final Product</h2>
+          <p>
+            The final Geo Quiz is a thoughtfully designed, intuitive, and
+            accessible three-round quiz game that challenges users progressively
+            as they advance. Each round becomes more difficult, with players
+            required to reach a specific score to move forward, encouraging
+            continued engagement and learning. The game’s logic was carefully
+            crafted and repeatedly refined through thorough usability testing to
+            identify and resolve any friction points. This iterative process
+            helped create a smooth and reliable user experience. With a clean,
+            responsive design, the quiz adapts seamlessly across devices, making
+            it easy to use for players of all ages and skill levels. Clear,
+            timely feedback after each question guides users through the game,
+            ensuring they understand their progress and feel motivated to
+            continue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- prototype gallery section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/geoquiz/mobile-home.webp"
+                alt="Geo Quiz homepage"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/geoquiz/mobile-correct.webp"
+                alt="Geo Quiz correct answer"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/geoquiz/mobile-wronganswer.webp"
+                alt="Geo Quiz wrong answer"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/geoquiz/mobile-levelcomplete.webp"
+                alt="Geo Quiz level complete"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="img-wrap">
+              <img
+                src="../assets/images/projects/geoquiz/mobile-gameover.webp"
+                alt="Geo Quiz game over"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- usability testing section  -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Usability Testing</h1>
+
+        <div
+          class="d-flex flex-wrap justify-content-center gap-4 my-4 text-center"
+          style="color: #5a5a5a"
+        >
+          <div
+            class="d-flex flex-column align-items-center"
+            style="min-width: 120px"
+          >
+            <i class="fas fa-users fa-2x mb-2"></i>
+            <strong>8 Participants</strong>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center"
+            style="min-width: 120px"
+          >
+            <i
+              class="fas fa-check-circle fa-2x mb-2"
+              style="color: #8fbc8b"
+            ></i>
+            <strong>90% Task Success</strong>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center"
+            style="min-width: 120px"
+          >
+            <i
+              class="fas fa-exclamation-triangle fa-2x mb-2"
+              style="color: #a35e00"
+            ></i>
+            <strong>25% Bug Occurrence</strong>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center"
+            style="min-width: 120px"
+          >
+            <i class="fas fa-clock fa-2x mb-2"></i>
+            <strong>10-15 min Sessions</strong>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center"
+            style="min-width: 120px"
+          >
+            <i class="fa-solid fa-mobile-screen-button fa-2x mb-2"></i>
+            <strong>Multi-device Tested</strong>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- Testing Goals -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Testing Goals</h2>
+              <p class="mb-0">
+                The primary goal of testing Geo Quiz was to ensure key
+                functionalities worked reliably across real-world scenarios.
+                With the first deployment as my prototype, I focused on
+                verifying that questions shuffled correctly, answer buttons
+                disabled appropriately after selection, and the score accurately
+                updated. Additionally, I tested that users were correctly
+                passing or failing each level based on their performance. The
+                game’s responsiveness was also evaluated across various screen
+                sizes and devices to ensure a smooth experience for all users.
+                This comprehensive testing helped identify and resolve issues
+                related to usability, responsiveness, and game logic under
+                diverse conditions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Methodology -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Methodology</h2>
+              <p class="mb-0">
+                I conducted <strong>moderated</strong> usability tests lasting
+                10–15 minutes each, where I guided users through a series of
+                tasks and questions. Participants were asked to perform actions
+                such as finding out how many points are needed to reach level 3,
+                attempting to manipulate the answer buttons, answering all
+                questions correctly, and intentionally failing. These sessions
+                provided valuable insights into how users interact with the
+                game’s mechanics and helped identify areas where the interface
+                and logic could be improved for clarity and reliability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Participants -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Participants</h2>
+              <p class="mb-0">
+                Eight participants aged 25–35 took part in the testing. I
+                selected users with varying levels of technical proficiency,
+                ranging from casual web users to those with more advanced
+                skills. Their geography knowledge also varied, from limited to
+                more advanced understanding, to reflect the diverse audience
+                likely to play the quiz. Testing was conducted across different
+                devices and screen sizes to capture a broad range of user
+                behaviours and experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Key Findings</h2>
+              <ul class="ps-3 mb-0">
+                <li>
+                  Some users discovered that by rapidly clicking or manipulating
+                  the buttons, they could change their answers after submission,
+                  which also affected the score incorrectly.
+                </li>
+                <li>
+                  Feedback on whether an answer was correct wasn’t always
+                  immediately clear.
+                </li>
+                <li>
+                  A few participants mentioned that the progression criteria
+                  between levels wasn’t obvious at first glance, prompting
+                  clearer instructions and visual cues.
+                </li>
+                <li>
+                  Users appreciated the straightforward design but suggested
+                  more prominent score updates to maintain motivation during
+                  gameplay.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- User Quotes -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">User Quotes</h2>
+              <blockquote class="fst-italic mb-2">
+                "I didn’t know how many points I needed to pass, I had to
+                guess."
+              </blockquote>
+              <blockquote class="fst-italic mb-2">
+                "It would be nice if the game told me right away if I got it
+                right or wrong."
+              </blockquote>
+              <blockquote class="fst-italic mb-0">
+                "I tried clicking the answers again and it let me change them,
+                is that supposed to happen?"
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Changes Made -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Changes Implemented</h2>
+              <p class="mb-0">
+                Based on user feedback, I added the score display to the top of
+                the screen so users could track their progress in real time,
+                rather than waiting until the end of each round. To improve
+                clarity and reduce confusion, I also introduced feedback phrases
+                like “Sorry!” or “Correct!” to make it instantly clear whether
+                an answer was correct. Additionally, I implemented further event
+                listener removal on answer buttons to prevent them from being
+                clicked multiple times or manipulated, ensuring the integrity of
+                both the gameplay and scoring system. These changes helped
+                create a more transparent, responsive, and user-friendly
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reflections -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Reflections</h2>
+              <p class="mb-0">
+                Usability testing revealed subtle but important issues I hadn’t
+                expected, such as users manipulating buttons or struggling to
+                understand feedback after answering. It reinforced how valuable
+                it is to test early with a variety of users and not assume that
+                logic or visuals are always clear. These insights pushed me to
+                refine the game's clarity, improve interaction feedback, and
+                strengthen accessibility across devices. Overall, it was a great
+                reminder that thoughtful iteration makes a big difference in the
+                user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- handoff section  -->
+    <section class="case-section">
+      <div class="container">
+        <h1 class="fw-bold text-center">Handoff</h1>
+
+        <div class="row g-4 mt-4">
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Languages & Libraries</h2>
+              <ul class="ps-3 mb-0">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Google Fonts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Developer Handoff</h2>
+              <p class="mb-0">
+                To ensure a clean developer handoff, I focused on keeping both
+                the design and code highly organized and easy to follow. I
+                documented key interaction patterns, design decisions, and
+                functionality to make it simple for another developer to
+                understand and build on. The JavaScript logic was kept modular
+                and clearly commented, and the HTML and CSS followed a
+                consistent structure for easy styling updates. Git and GitHub
+                were used throughout development to track progress and manage
+                versions. The final build was tested across browsers and screen
+                sizes, and deployed using a simple process that makes future
+                updates quick and low-risk.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Tools & Programs</h2>
+              <ul class="ps-3 mb-0">
+                <li>Git & GitHub for deployment and version control</li>
+                <li>W3C CSS Validator</li>
+                <li>Font Awesome</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="p-3 h-100 w-100 d-flex flex-column">
+              <h2 class="fw-bold">Testing & QA</h2>
+              <p class="mb-0">
+                I conducted both manual testing and moderated usability sessions
+                to ensure Geo Quiz performed reliably across desktop and mobile
+                environments. Manual testing helped validate core functionality,
+                including scoring accuracy, button states, and level
+                progression. Usability testing offered valuable feedback on how
+                real users interacted with the game, highlighting issues such as
+                unclear feedback messaging and edge-case bugs related to button
+                behaviour. These insights allowed me to refine the user
+                experience, strengthen the game logic, and improve the overall
+                stability before final deployment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reflection  -->
+    <section class="case-section" style="padding-bottom: 4rem">
+      <div class="container">
+        <h1 class="fw-bold text-center">Reflection</h1>
+        <p class="mb-0">
+          This project was a huge milestone for me as it was my first ever
+          JavaScript game. It was incredibly rewarding to not only learn the
+          language but to apply it in building something interactive that real
+          users could play and enjoy. Seeing the logic come to life through code
+          gave me a whole new appreciation for how much thought goes into even
+          the simplest interactions. I learned a lot, not just about JavaScript
+          itself, but about how real users interact with digital products in
+          unexpected ways. Usability testing revealed things I hadn’t
+          considered, and I saw firsthand how important accessibility, feedback,
+          and mobile responsiveness really are. Moving forward, I plan to
+          improve my wireframing process with high-fidelity prototypes earlier
+          in the project and continue refining both my front-end skills and my
+          approach to human-centred design.
+        </p>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/2747d9050d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- local JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
