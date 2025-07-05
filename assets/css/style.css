@@ -102,7 +102,7 @@ ul {
   margin: 0 auto;
 }
 
-.homepage-portfolio .grid-container div {
+.homepage-portfolio .grid-container .port-img {
   display: flex;
   justify-content: center;
   align-items: center;
