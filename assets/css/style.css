@@ -21,7 +21,7 @@ h4,
 h5,
 p,
 li {
-  color: #5a5a5a;
+  color: #3d3d3e;
 }
 
 .navbar-nav a {
@@ -140,7 +140,7 @@ ul {
   padding: 3px 10px;
   margin: 2px;
   background-color: #ffffff;
-  color: #5a5a5a;
+  color: #3d3d3e;
   border: 1px solid #ccc;
   border-radius: 9999px;
   font-size: 0.85rem;
@@ -216,14 +216,15 @@ ul {
 }
 
 .contactme button {
-  background-color: #5a5a5a;
+  background-color: #3d3d3e;
   color: white;
-  border: #e8e8e8 1.5px solid;
+  border: #5a5a5a 1.5px solid;
   width: 100%;
 }
 
 .contactme button:hover {
-  background-color: #e8e8e8;
+  background-color: #5a5a5a;
+  color: white;
 }
 
 #dragonite {
@@ -263,24 +264,24 @@ ul {
 .social-media a {
   font-size: 400%;
   margin: 1% 7%;
-  color: #5a5a5a !important;
+  color: #3d3d3e !important;
   text-decoration: none;
   padding: 10px 15px;
 }
 
 .social-media a i {
   transition: color 0.2s ease;
-  color: #5a5a5a !important;
+  color: #3d3d3e !important;
 }
 
 .social-media a:hover i {
-  color: #e8e8e8 !important;
+  color: #5a5a5a !important;
 }
 
 .social-media a:link,
 .social-media a:visited,
 .social-media a:active {
-  color: #5a5a5a !important;
+  color: #3d3d3e !important;
 }
 
 /* PROJECTS */
@@ -321,7 +322,7 @@ ul {
 }
 
 .holyrecipes-hero {
-  background-color: #f3e7e6;
+  background-color: #faf1f1;
 }
 
 .project-img {
@@ -345,6 +346,13 @@ ul {
   padding: 2%;
 }
 
+.highlight-card {
+  background-color: #f5f6f7;
+  color: #3d3d3e;
+  padding: 3.5% !important;
+  margin: 0.5% 0% !important;
+}
+
 .user-table thead {
   background-color: #f8f9fa;
 }
@@ -357,7 +365,7 @@ ul {
 
 .user-table {
   font-size: 0.95rem;
-  color: #5a5a5a;
+  color: #3d3d3e;
 }
 
 .img-fluid {
